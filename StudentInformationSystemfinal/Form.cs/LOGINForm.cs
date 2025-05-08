@@ -1,0 +1,122 @@
+﻿using System;
+//using System.Collections.ObjectModel;
+using System.Windows.Forms;
+//using DevExpress.Utils.About;
+//using DevExpress.Utils.Win.Hook;
+//using DevExpress.XtraEditors;
+//using StudentInformationSystemfinal.StudentInformationSystemFormcs;
+//using static DevExpress.XtraEditors.Mask.MaskSettings;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+//using DevExpress.Office.Crypto;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Data.SqlClient;
+//using System.Reflection;
+using StudentInformationSystemfinal.Form.cs;
+using DevExpress.XtraEditors;
+using StudentInformationSystemfinal.Models;
+
+namespace StudentInformationSystemfinal
+{
+    public partial class LOGINForm : DevExpress.XtraEditors.XtraForm
+    {
+        public LOGINForm()
+        {
+            InitializeComponent();
+        }
+
+        
+            private string HashPassword(string password)
+            {
+                using (var sha256 = System.Security.Cryptography.SHA256.Create())
+                {
+                    byte[] bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                    var builder = new System.Text.StringBuilder();
+                    foreach (var b in bytes)
+                    {
+                        builder.Append(b.ToString("x2"));
+                    }
+                    return builder.ToString();
+                }
+            }
+
+            
+           
+            
+      
+        private object GetStudents()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void richEditControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentInformationForm_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tePassword_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LOGIN2_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        UserCredentials userCredentials = new UserCredentials();
+
+        private void LOGIN_Click(object sender, EventArgs e)
+        {
+
+            string inputUsername = teUserName.Text;
+            string inputPassword = tePassword.Text;
+            string userTypeChoice = cbeUserTypes.SelectedItem?.ToString();
+
+            if (string.IsNullOrEmpty(inputUsername) || string.IsNullOrEmpty(inputPassword) || string.IsNullOrEmpty(userTypeChoice)) {
+                XtraMessageBox.Show("Please fill up all the fields!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+
+            if (userTypeChoice == "Nurse")
+            {
+                if (inputUsername == userCredentials.Username && inputPassword == userCredentials.Password)
+                {
+                    Nurse_Homepage nurseHomePage = new Nurse_Homepage();
+                    nurseHomePage.Show();
+                }
+                else {
+                    XtraMessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            else if (userTypeChoice == "Administrator") {
+                if (inputUsername == userCredentials.Username && inputPassword == userCredentials.Password)
+                {
+                    DMCMEDICAL_Homepage dMCMEDICAL_ = new DMCMEDICAL_Homepage();
+                    dMCMEDICAL_.Show();
+                }
+                else {
+                    XtraMessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+        }
+
+        private void teUserName_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+    }
+
