@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DMCMEDICAL_Homepage2));
             this.btnAddPatients = new DevExpress.XtraEditors.SimpleButton();
             this.btnCCMA = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAddNewUser = new DevExpress.XtraEditors.SimpleButton();
             this.btnTotalPatients = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.lblSubheader = new DevExpress.XtraEditors.LabelControl();
@@ -44,59 +43,48 @@
             // 
             // btnAddPatients
             // 
-            this.btnAddPatients.Appearance.Font = new System.Drawing.Font("Stencil", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPatients.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddPatients.Appearance.Options.UseFont = true;
             this.btnAddPatients.AppearancePressed.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAddPatients.AppearancePressed.Options.UseBackColor = true;
             this.btnAddPatients.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddPatients.ImageOptions.SvgImage")));
-            this.btnAddPatients.Location = new System.Drawing.Point(873, 340);
+            this.btnAddPatients.Location = new System.Drawing.Point(555, 276);
+            this.btnAddPatients.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPatients.Name = "btnAddPatients";
-            this.btnAddPatients.Size = new System.Drawing.Size(664, 279);
+            this.btnAddPatients.Size = new System.Drawing.Size(436, 269);
             this.btnAddPatients.TabIndex = 0;
             this.btnAddPatients.Text = "ADD PATIENT";
             this.btnAddPatients.Click += new System.EventHandler(this.ADDPATIENT_Click);
             // 
             // btnCCMA
             // 
-            this.btnCCMA.Appearance.Font = new System.Drawing.Font("Stencil", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCCMA.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCCMA.Appearance.Options.UseFont = true;
             this.btnCCMA.AppearancePressed.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnCCMA.AppearancePressed.Options.UseBackColor = true;
             this.btnCCMA.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCCMA.ImageOptions.SvgImage")));
-            this.btnCCMA.Location = new System.Drawing.Point(873, 733);
+            this.btnCCMA.Location = new System.Drawing.Point(1069, 276);
+            this.btnCCMA.Margin = new System.Windows.Forms.Padding(2);
             this.btnCCMA.Name = "btnCCMA";
-            this.btnCCMA.Size = new System.Drawing.Size(693, 290);
+            this.btnCCMA.Size = new System.Drawing.Size(436, 269);
             this.btnCCMA.TabIndex = 1;
-            this.btnCCMA.Text = "CC&MA";
+            this.btnCCMA.Text = "          CHIEF COMPLAINT\r\n          MEDICAL ASSESSMENT";
             this.btnCCMA.Click += new System.EventHandler(this.btnCCMA_Click);
-            // 
-            // btnAddNewUser
-            // 
-            this.btnAddNewUser.Appearance.Font = new System.Drawing.Font("Stencil", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewUser.Appearance.Options.UseFont = true;
-            this.btnAddNewUser.AppearancePressed.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnAddNewUser.AppearancePressed.Options.UseBackColor = true;
-            this.btnAddNewUser.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddNewUser.ImageOptions.SvgImage")));
-            this.btnAddNewUser.Location = new System.Drawing.Point(1644, 342);
-            this.btnAddNewUser.Name = "btnAddNewUser";
-            this.btnAddNewUser.Size = new System.Drawing.Size(616, 278);
-            this.btnAddNewUser.TabIndex = 1;
-            this.btnAddNewUser.Text = "ADD NEW USER";
-            this.btnAddNewUser.Click += new System.EventHandler(this.ADDNEWUSER2_Click);
             // 
             // btnTotalPatients
             // 
-            this.btnTotalPatients.Appearance.Font = new System.Drawing.Font("Stencil", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTotalPatients.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTotalPatients.Appearance.Options.UseFont = true;
             this.btnTotalPatients.AppearancePressed.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnTotalPatients.AppearancePressed.Options.UseBackColor = true;
             this.btnTotalPatients.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTotalPatients.ImageOptions.SvgImage")));
-            this.btnTotalPatients.Location = new System.Drawing.Point(230, 340);
+            this.btnTotalPatients.Location = new System.Drawing.Point(47, 276);
+            this.btnTotalPatients.Margin = new System.Windows.Forms.Padding(2);
             this.btnTotalPatients.Name = "btnTotalPatients";
-            this.btnTotalPatients.Size = new System.Drawing.Size(589, 280);
+            this.btnTotalPatients.Size = new System.Drawing.Size(421, 269);
             this.btnTotalPatients.TabIndex = 13;
             this.btnTotalPatients.Text = "TOTAL PATIENTS";
-            this.btnTotalPatients.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btnTotalPatients.Click += new System.EventHandler(this.btnTotalPatients_Click);
             // 
             // panelControl1
             // 
@@ -105,23 +93,23 @@
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.lblSubheader);
             this.panelControl1.Controls.Add(this.lblWelcome);
-            this.panelControl1.Location = new System.Drawing.Point(80, 94);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.panelControl1.Location = new System.Drawing.Point(11, 47);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(2158, 152);
+            this.panelControl1.Size = new System.Drawing.Size(1512, 86);
             this.panelControl1.TabIndex = 14;
             // 
             // lblSubheader
             // 
-            this.lblSubheader.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubheader.Appearance.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSubheader.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F);
+            this.lblSubheader.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblSubheader.Appearance.Options.UseFont = true;
             this.lblSubheader.Appearance.Options.UseForeColor = true;
             this.lblSubheader.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblSubheader.Location = new System.Drawing.Point(357, 84);
-            this.lblSubheader.Margin = new System.Windows.Forms.Padding(4);
+            this.lblSubheader.Location = new System.Drawing.Point(402, 43);
+            this.lblSubheader.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lblSubheader.Name = "lblSubheader";
-            this.lblSubheader.Size = new System.Drawing.Size(1141, 63);
+            this.lblSubheader.Size = new System.Drawing.Size(669, 40);
             this.lblSubheader.TabIndex = 1;
             this.lblSubheader.Text = "                 Providing quality healthcare services for our students and commu" +
     "nity";
@@ -129,41 +117,44 @@
             // lblWelcome
             // 
             this.lblWelcome.Appearance.BackColor = System.Drawing.Color.SeaGreen;
-            this.lblWelcome.Appearance.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.Appearance.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblWelcome.Appearance.Options.UseBackColor = true;
             this.lblWelcome.Appearance.Options.UseFont = true;
             this.lblWelcome.Appearance.Options.UseForeColor = true;
             this.lblWelcome.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblWelcome.Location = new System.Drawing.Point(195, 4);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4);
+            this.lblWelcome.Location = new System.Drawing.Point(113, -10);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(1638, 96);
+            this.lblWelcome.Size = new System.Drawing.Size(1127, 61);
             this.lblWelcome.TabIndex = 0;
-            this.lblWelcome.Text = "                  WELCOME TO DMC MEDICAL CLINIC";
+            this.lblWelcome.Text = "                                           WELCOME TO DMC MEDICAL CLINIC";
+            this.lblWelcome.Click += new System.EventHandler(this.lblWelcome_Click);
             // 
             // toggleSwitch1
             // 
-            this.toggleSwitch1.Location = new System.Drawing.Point(2169, 26);
+            this.toggleSwitch1.Location = new System.Drawing.Point(1421, 0);
+            this.toggleSwitch1.Margin = new System.Windows.Forms.Padding(2);
             this.toggleSwitch1.Name = "toggleSwitch1";
             this.toggleSwitch1.Properties.AutoHeight = false;
             this.toggleSwitch1.Properties.OffText = "Off";
             this.toggleSwitch1.Properties.OnText = "On";
-            this.toggleSwitch1.Size = new System.Drawing.Size(174, 48);
+            this.toggleSwitch1.Size = new System.Drawing.Size(102, 31);
             this.toggleSwitch1.TabIndex = 20;
             this.toggleSwitch1.Toggled += new System.EventHandler(this.toggleSwitch1_Toggled_1);
             // 
             // DMCMEDICAL_Homepage2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2370, 1163);
+            this.ClientSize = new System.Drawing.Size(1534, 877);
             this.Controls.Add(this.btnCCMA);
-            this.Controls.Add(this.btnAddNewUser);
             this.Controls.Add(this.btnTotalPatients);
             this.Controls.Add(this.btnAddPatients);
             this.Controls.Add(this.toggleSwitch1);
             this.Controls.Add(this.panelControl1);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("DMCMEDICAL_Homepage2.IconOptions.Image")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DMCMEDICAL_Homepage2";
@@ -181,7 +172,6 @@
         #endregion
         private DevExpress.XtraEditors.SimpleButton btnAddPatients;
         private DevExpress.XtraEditors.SimpleButton btnCCMA;
-        private DevExpress.XtraEditors.SimpleButton btnAddNewUser;
         private DevExpress.XtraEditors.SimpleButton btnTotalPatients;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.LabelControl lblSubheader;

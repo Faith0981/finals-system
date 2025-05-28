@@ -13,6 +13,8 @@ namespace StudentInformationSystemfinal.Models
         
         public int Age { get; set; }
 
+        
+
        
 
     }

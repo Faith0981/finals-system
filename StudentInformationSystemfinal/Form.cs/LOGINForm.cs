@@ -14,6 +14,7 @@ using System.Data.SqlClient;
 using StudentInformationSystemfinal.Form.cs;
 using DevExpress.XtraEditors;
 using StudentInformationSystemfinal.Models;
+using StudentInformationSystemfinal;
 
 namespace StudentInformationSystemfinal
 {
@@ -55,7 +56,7 @@ namespace StudentInformationSystemfinal
 
         private void StudentInformationForm_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void tePassword_EditValueChanged(object sender, EventArgs e)
@@ -92,6 +93,7 @@ namespace StudentInformationSystemfinal
             {
                 if (inputUsername == userCredentials.Username && inputPassword == userCredentials.Password)
                 {
+                    this.Hide();
                     Nurse_Homepage nurseHomePage = new Nurse_Homepage();
                     nurseHomePage.Show();
                 }
@@ -103,6 +105,7 @@ namespace StudentInformationSystemfinal
             else if (userTypeChoice == "Administrator") {
                 if (inputUsername == userCredentials.Username && inputPassword == userCredentials.Password)
                 {
+                    this.Hide();
                     DMCMEDICAL_Homepage dMCMEDICAL_ = new DMCMEDICAL_Homepage();
                     dMCMEDICAL_.Show();
                 }
@@ -114,6 +117,27 @@ namespace StudentInformationSystemfinal
         }
 
         private void teUserName_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ALREADYHAVEANACCOUNT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CREATEANACCOUNT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void panelControl1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

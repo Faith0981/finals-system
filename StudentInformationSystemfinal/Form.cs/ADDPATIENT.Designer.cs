@@ -28,317 +28,417 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ADD_PATIENT));
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.FIRSTNAMEBUTTON = new DevExpress.XtraEditors.TextEdit();
-            this.LASTNAMEBUTTON = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.teFirstName = new DevExpress.XtraEditors.TextEdit();
+            this.teLastName = new DevExpress.XtraEditors.TextEdit();
+            this.teParent = new DevExpress.XtraEditors.TextEdit();
+            this.teAddress = new DevExpress.XtraEditors.TextEdit();
             this.FIRSTNAME = new DevExpress.XtraEditors.LabelControl();
-            this.LASTNAME = new DevExpress.XtraEditors.LabelControl();
-            this.ADDRESS = new DevExpress.XtraEditors.LabelControl();
-            this.BIRTHDATE = new DevExpress.XtraEditors.LabelControl();
-            this.PARENTGUARDIANNAME = new DevExpress.XtraEditors.LabelControl();
-            this.BIRTHDATEBUTTON = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            this.EMERGENCYCONTACTPERSON = new DevExpress.XtraEditors.LabelControl();
-            this.EMERGENCYPHONENUMBER = new DevExpress.XtraEditors.LabelControl();
-            this.GENERALINFORMATION = new DevExpress.XtraEditors.LabelControl();
-            this.KNOWNALLERGIES_SYMPTOMS = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.teEmergencyPhoneNumber = new DevExpress.XtraEditors.TextEdit();
+            this.teAge = new DevExpress.XtraEditors.TextEdit();
+            this.btnAddPatient = new DevExpress.XtraEditors.SimpleButton();
+            this.deBirthdate = new DevExpress.XtraEditors.DateEdit();
+            this.meAllergies = new DevExpress.XtraEditors.MemoEdit();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbe_Course = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.ADDPATIENT = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FIRSTNAMEBUTTON.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LASTNAMEBUTTON.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BIRTHDATEBUTTON.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.teContactNumber = new DevExpress.XtraEditors.TextEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.teFirstName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teLastName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teParent.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teAddress.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teEmergencyPhoneNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teAge.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deBirthdate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deBirthdate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meAllergies.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbe_Course.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teContactNumber.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureEdit1
+            // teFirstName
             // 
-            this.pictureEdit1.Location = new System.Drawing.Point(56, 1);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.OpenFileDialogFilter = "\"Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif\";";
-            this.pictureEdit1.Properties.PictureStoreMode = DevExpress.XtraEditors.Controls.PictureStoreMode.Image;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit1.Size = new System.Drawing.Size(321, 265);
-            this.pictureEdit1.TabIndex = 1;
-            this.pictureEdit1.EditValueChanged += new System.EventHandler(this.pictureEdit1_EditValueChanged);
+            this.teFirstName.Location = new System.Drawing.Point(138, 83);
+            this.teFirstName.Margin = new System.Windows.Forms.Padding(2);
+            this.teFirstName.Name = "teFirstName";
+            this.teFirstName.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.teFirstName.Properties.Appearance.Options.UseBorderColor = true;
+            this.teFirstName.Size = new System.Drawing.Size(278, 34);
+            this.teFirstName.TabIndex = 2;
+            this.teFirstName.EditValueChanged += new System.EventHandler(this.FIRSTNAMEBUTTON_EditValueChanged);
             // 
-            // FIRSTNAMEBUTTON
+            // teLastName
             // 
-            this.FIRSTNAMEBUTTON.Location = new System.Drawing.Point(462, 32);
-            this.FIRSTNAMEBUTTON.Name = "FIRSTNAMEBUTTON";
-            this.FIRSTNAMEBUTTON.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.FIRSTNAMEBUTTON.Properties.Appearance.Options.UseBorderColor = true;
-            this.FIRSTNAMEBUTTON.Size = new System.Drawing.Size(390, 56);
-            this.FIRSTNAMEBUTTON.TabIndex = 2;
-            this.FIRSTNAMEBUTTON.EditValueChanged += new System.EventHandler(this.FIRSTNAMEBUTTON_EditValueChanged);
+            this.teLastName.Location = new System.Drawing.Point(527, 81);
+            this.teLastName.Margin = new System.Windows.Forms.Padding(2);
+            this.teLastName.Name = "teLastName";
+            this.teLastName.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.teLastName.Properties.Appearance.Options.UseBorderColor = true;
+            this.teLastName.Size = new System.Drawing.Size(278, 34);
+            this.teLastName.TabIndex = 3;
+            this.teLastName.EditValueChanged += new System.EventHandler(this.teLastName_EditValueChanged);
             // 
-            // LASTNAMEBUTTON
+            // teParent
             // 
-            this.LASTNAMEBUTTON.Location = new System.Drawing.Point(462, 150);
-            this.LASTNAMEBUTTON.Name = "LASTNAMEBUTTON";
-            this.LASTNAMEBUTTON.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.LASTNAMEBUTTON.Properties.Appearance.Options.UseBorderColor = true;
-            this.LASTNAMEBUTTON.Size = new System.Drawing.Size(390, 56);
-            this.LASTNAMEBUTTON.TabIndex = 3;
+            this.teParent.Location = new System.Drawing.Point(629, 145);
+            this.teParent.Margin = new System.Windows.Forms.Padding(2);
+            this.teParent.Name = "teParent";
+            this.teParent.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.teParent.Properties.Appearance.Options.UseBorderColor = true;
+            this.teParent.Size = new System.Drawing.Size(272, 34);
+            this.teParent.TabIndex = 4;
+            this.teParent.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
             // 
-            // textEdit3
+            // teAddress
             // 
-            this.textEdit3.Location = new System.Drawing.Point(472, 373);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textEdit3.Properties.Appearance.Options.UseBorderColor = true;
-            this.textEdit3.Size = new System.Drawing.Size(390, 56);
-            this.textEdit3.TabIndex = 4;
-            this.textEdit3.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Location = new System.Drawing.Point(56, 500);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textEdit4.Properties.Appearance.Options.UseBorderColor = true;
-            this.textEdit4.Size = new System.Drawing.Size(806, 56);
-            this.textEdit4.TabIndex = 5;
-            this.textEdit4.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
+            this.teAddress.Location = new System.Drawing.Point(929, 206);
+            this.teAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.teAddress.Name = "teAddress";
+            this.teAddress.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.teAddress.Properties.Appearance.Options.UseBorderColor = true;
+            this.teAddress.Size = new System.Drawing.Size(280, 34);
+            this.teAddress.TabIndex = 5;
+            this.teAddress.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
             // 
             // FIRSTNAME
             // 
-            this.FIRSTNAME.Location = new System.Drawing.Point(462, 1);
+            this.FIRSTNAME.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FIRSTNAME.Appearance.Options.UseFont = true;
+            this.FIRSTNAME.Location = new System.Drawing.Point(29, 85);
+            this.FIRSTNAME.Margin = new System.Windows.Forms.Padding(2);
             this.FIRSTNAME.Name = "FIRSTNAME";
-            this.FIRSTNAME.Size = new System.Drawing.Size(101, 25);
+            this.FIRSTNAME.Size = new System.Drawing.Size(97, 23);
             this.FIRSTNAME.TabIndex = 11;
-            this.FIRSTNAME.Text = "First Name";
+            this.FIRSTNAME.Text = "First Name :";
             // 
-            // LASTNAME
+            // teEmergencyPhoneNumber
             // 
-            this.LASTNAME.Location = new System.Drawing.Point(465, 110);
-            this.LASTNAME.Name = "LASTNAME";
-            this.LASTNAME.Size = new System.Drawing.Size(98, 25);
-            this.LASTNAME.TabIndex = 12;
-            this.LASTNAME.Text = "Last Name";
+            this.teEmergencyPhoneNumber.Location = new System.Drawing.Point(260, 206);
+            this.teEmergencyPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.teEmergencyPhoneNumber.Name = "teEmergencyPhoneNumber";
+            this.teEmergencyPhoneNumber.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.teEmergencyPhoneNumber.Properties.Appearance.Options.UseBorderColor = true;
+            this.teEmergencyPhoneNumber.Size = new System.Drawing.Size(272, 34);
+            this.teEmergencyPhoneNumber.TabIndex = 17;
+            this.teEmergencyPhoneNumber.EditValueChanged += new System.EventHandler(this.textEdit7_EditValueChanged);
             // 
-            // ADDRESS
+            // teAge
             // 
-            this.ADDRESS.Location = new System.Drawing.Point(56, 469);
-            this.ADDRESS.Name = "ADDRESS";
-            this.ADDRESS.Size = new System.Drawing.Size(74, 25);
-            this.ADDRESS.TabIndex = 13;
-            this.ADDRESS.Text = "Address";
+            this.teAge.Location = new System.Drawing.Point(888, 83);
+            this.teAge.Margin = new System.Windows.Forms.Padding(2);
+            this.teAge.Name = "teAge";
+            this.teAge.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.teAge.Properties.Appearance.Options.UseBorderColor = true;
+            this.teAge.Size = new System.Drawing.Size(103, 34);
+            this.teAge.TabIndex = 25;
             // 
-            // BIRTHDATE
+            // btnAddPatient
             // 
-            this.BIRTHDATE.Location = new System.Drawing.Point(56, 328);
-            this.BIRTHDATE.Name = "BIRTHDATE";
-            this.BIRTHDATE.Size = new System.Drawing.Size(86, 25);
-            this.BIRTHDATE.TabIndex = 14;
-            this.BIRTHDATE.Text = "Birthdate";
+            this.btnAddPatient.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAddPatient.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPatient.Appearance.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.ControlText;
+            this.btnAddPatient.Appearance.Options.UseBackColor = true;
+            this.btnAddPatient.Appearance.Options.UseFont = true;
+            this.btnAddPatient.Appearance.Options.UseForeColor = true;
+            this.btnAddPatient.AppearancePressed.BorderColor = System.Drawing.Color.DimGray;
+            this.btnAddPatient.AppearancePressed.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAddPatient.AppearancePressed.Options.UseBorderColor = true;
+            this.btnAddPatient.AppearancePressed.Options.UseForeColor = true;
+            this.btnAddPatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddPatient.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPatient.ImageOptions.Image")));
+            this.btnAddPatient.Location = new System.Drawing.Point(1073, 534);
+            this.btnAddPatient.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddPatient.Name = "btnAddPatient";
+            this.btnAddPatient.Size = new System.Drawing.Size(223, 44);
+            this.btnAddPatient.TabIndex = 27;
+            this.btnAddPatient.Text = "Add Patient";
+            this.btnAddPatient.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
+            this.btnAddPatient.Click += new System.EventHandler(this.ADDPATIENT_Click_1);
             // 
-            // PARENTGUARDIANNAME
+            // deBirthdate
             // 
-            this.PARENTGUARDIANNAME.Location = new System.Drawing.Point(472, 328);
-            this.PARENTGUARDIANNAME.Name = "PARENTGUARDIANNAME";
-            this.PARENTGUARDIANNAME.Size = new System.Drawing.Size(215, 25);
-            this.PARENTGUARDIANNAME.TabIndex = 15;
-            this.PARENTGUARDIANNAME.Text = "Parent/Guardian Name";
+            this.deBirthdate.EditValue = null;
+            this.deBirthdate.Location = new System.Drawing.Point(138, 150);
+            this.deBirthdate.Name = "deBirthdate";
+            this.deBirthdate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.deBirthdate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.deBirthdate.Size = new System.Drawing.Size(272, 34);
+            this.deBirthdate.TabIndex = 29;
+            this.deBirthdate.EditValueChanged += new System.EventHandler(this.deBirthdate_EditValueChanged);
             // 
-            // BIRTHDATEBUTTON
+            // meAllergies
             // 
-            this.BIRTHDATEBUTTON.Location = new System.Drawing.Point(56, 373);
-            this.BIRTHDATEBUTTON.Name = "BIRTHDATEBUTTON";
-            this.BIRTHDATEBUTTON.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.BIRTHDATEBUTTON.Properties.Appearance.Options.UseBorderColor = true;
-            this.BIRTHDATEBUTTON.Size = new System.Drawing.Size(357, 56);
-            this.BIRTHDATEBUTTON.TabIndex = 6;
+            this.meAllergies.Location = new System.Drawing.Point(260, 259);
+            this.meAllergies.Name = "meAllergies";
+            this.meAllergies.Size = new System.Drawing.Size(418, 130);
+            this.meAllergies.TabIndex = 30;
+            this.meAllergies.EditValueChanged += new System.EventHandler(this.meAllergies_EditValueChanged);
             // 
-            // textEdit6
+            // comboBoxEdit1
             // 
-            this.textEdit6.Location = new System.Drawing.Point(56, 647);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textEdit6.Properties.Appearance.Options.UseBorderColor = true;
-            this.textEdit6.Size = new System.Drawing.Size(357, 56);
-            this.textEdit6.TabIndex = 16;
+            this.comboBoxEdit1.EditValue = "";
+            this.comboBoxEdit1.Location = new System.Drawing.Point(629, 206);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Properties.DropDownRows = 2;
+            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            "SEVER INJURED",
+            "MINOR INJURED"});
+            this.comboBoxEdit1.Size = new System.Drawing.Size(207, 34);
+            this.comboBoxEdit1.TabIndex = 37;
+            this.comboBoxEdit1.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit1_SelectedIndexChanged);
             // 
-            // textEdit7
+            // cbe_Course
             // 
-            this.textEdit7.Location = new System.Drawing.Point(483, 647);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textEdit7.Properties.Appearance.Options.UseBorderColor = true;
-            this.textEdit7.Size = new System.Drawing.Size(379, 56);
-            this.textEdit7.TabIndex = 17;
+            this.cbe_Course.EditValue = "";
+            this.cbe_Course.Location = new System.Drawing.Point(1085, 83);
+            this.cbe_Course.Name = "cbe_Course";
+            this.cbe_Course.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbe_Course.Properties.DropDownRows = 2;
+            this.cbe_Course.Properties.Items.AddRange(new object[] {
+            "BACHELOR OF SCIENCE IN ACCOUNTANCY",
+            "BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION",
+            "BACHELOR OF SCIENCE IN HOTEL, RESTAURANT AND MANAGEMENT",
+            "BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY",
+            "BACHELOR OF SCIENCE IN MEDICAL TECHNOLOGY",
+            "BACHELOR OF SCIENCE IN MIDWIFERY",
+            "BACHELOR OF SCIENCE IN NURSING",
+            "BACHELOR OF SCIENCE IN PHARMACY",
+            "BACHELOR OF SCIENCE IN PHYSICAL THERAPY",
+            "BACHELOR OF SECONDARY EDUCATION",
+            "BACHELOR OF ELEMENTARY EDUCATION",
+            "BACHELOR OF SCIENCE IN RADIOLOGIC TECHNOLOGY"});
+            this.cbe_Course.Size = new System.Drawing.Size(157, 34);
+            this.cbe_Course.TabIndex = 38;
+            this.cbe_Course.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit2_SelectedIndexChanged);
             // 
-            // textEdit8
+            // labelControl3
             // 
-            this.textEdit8.Location = new System.Drawing.Point(916, 42);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Properties.AutoHeight = false;
-            this.textEdit8.Size = new System.Drawing.Size(963, 369);
-            this.textEdit8.TabIndex = 18;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(18, 20);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(250, 28);
+            this.labelControl3.TabIndex = 40;
+            this.labelControl3.Text = "STUDENT INFORMATION :";
             // 
-            // textEdit9
+            // labelControl4
             // 
-            this.textEdit9.Location = new System.Drawing.Point(916, 420);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.AutoHeight = false;
-            this.textEdit9.Size = new System.Drawing.Size(963, 407);
-            this.textEdit9.TabIndex = 19;
-            // 
-            // EMERGENCYCONTACTPERSON
-            // 
-            this.EMERGENCYCONTACTPERSON.Location = new System.Drawing.Point(56, 596);
-            this.EMERGENCYCONTACTPERSON.Name = "EMERGENCYCONTACTPERSON";
-            this.EMERGENCYCONTACTPERSON.Size = new System.Drawing.Size(252, 25);
-            this.EMERGENCYCONTACTPERSON.TabIndex = 20;
-            this.EMERGENCYCONTACTPERSON.Text = "Emergency Contact Person";
-            // 
-            // EMERGENCYPHONENUMBER
-            // 
-            this.EMERGENCYPHONENUMBER.Location = new System.Drawing.Point(483, 596);
-            this.EMERGENCYPHONENUMBER.Name = "EMERGENCYPHONENUMBER";
-            this.EMERGENCYPHONENUMBER.Size = new System.Drawing.Size(251, 25);
-            this.EMERGENCYPHONENUMBER.TabIndex = 21;
-            this.EMERGENCYPHONENUMBER.Text = "Emergency Phone Number";
-            // 
-            // GENERALINFORMATION
-            // 
-            this.GENERALINFORMATION.Location = new System.Drawing.Point(916, 442);
-            this.GENERALINFORMATION.Name = "GENERALINFORMATION";
-            this.GENERALINFORMATION.Size = new System.Drawing.Size(189, 25);
-            this.GENERALINFORMATION.TabIndex = 22;
-            this.GENERALINFORMATION.Text = "General Information";
-            // 
-            // KNOWNALLERGIES_SYMPTOMS
-            // 
-            this.KNOWNALLERGIES_SYMPTOMS.Location = new System.Drawing.Point(916, 0);
-            this.KNOWNALLERGIES_SYMPTOMS.Name = "KNOWNALLERGIES_SYMPTOMS";
-            this.KNOWNALLERGIES_SYMPTOMS.Size = new System.Drawing.Size(254, 25);
-            this.KNOWNALLERGIES_SYMPTOMS.TabIndex = 23;
-            this.KNOWNALLERGIES_SYMPTOMS.Text = "Known Allergies/Symptoms";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(465, 251);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textEdit1.Properties.Appearance.Options.UseBorderColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(390, 56);
-            this.textEdit1.TabIndex = 25;
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(429, 87);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(94, 23);
+            this.labelControl4.TabIndex = 41;
+            this.labelControl4.Text = "Last Name :";
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(472, 220);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(831, 85);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(36, 25);
-            this.labelControl1.TabIndex = 26;
-            this.labelControl1.Text = "Age";
+            this.labelControl1.Size = new System.Drawing.Size(42, 23);
+            this.labelControl1.TabIndex = 42;
+            this.labelControl1.Text = "Age :";
             // 
-            // ADDPATIENT
+            // labelControl5
             // 
-            this.ADDPATIENT.Appearance.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ADDPATIENT.Appearance.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ADDPATIENT.Appearance.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.ControlText;
-            this.ADDPATIENT.Appearance.Options.UseBackColor = true;
-            this.ADDPATIENT.Appearance.Options.UseFont = true;
-            this.ADDPATIENT.Appearance.Options.UseForeColor = true;
-            this.ADDPATIENT.AppearancePressed.BorderColor = System.Drawing.Color.DimGray;
-            this.ADDPATIENT.AppearancePressed.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.ADDPATIENT.AppearancePressed.Options.UseBorderColor = true;
-            this.ADDPATIENT.AppearancePressed.Options.UseForeColor = true;
-            this.ADDPATIENT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ADDPATIENT.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ADDPATIENT.ImageOptions.Image")));
-            this.ADDPATIENT.Location = new System.Drawing.Point(164, 779);
-            this.ADDPATIENT.Name = "ADDPATIENT";
-            this.ADDPATIENT.Size = new System.Drawing.Size(523, 64);
-            this.ADDPATIENT.TabIndex = 27;
-            this.ADDPATIENT.Text = "Add Patient";
-            this.ADDPATIENT.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
-            this.ADDPATIENT.Click += new System.EventHandler(this.ADDPATIENT_Click_1);
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(18, 154);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(115, 23);
+            this.labelControl5.TabIndex = 43;
+            this.labelControl5.Text = "Date of Birth :";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(1016, 85);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(64, 23);
+            this.labelControl6.TabIndex = 44;
+            this.labelControl6.Text = "Course :";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(429, 154);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(195, 23);
+            this.labelControl2.TabIndex = 45;
+            this.labelControl2.Text = "Perent/Guardian Name :";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(20, 215);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(236, 23);
+            this.labelControl7.TabIndex = 46;
+            this.labelControl7.Text = "Emergency Contact Number :";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(18, 268);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(234, 23);
+            this.labelControl8.TabIndex = 47;
+            this.labelControl8.Text = "Known Allergies/Symptoms :";
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(559, 215);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(65, 23);
+            this.labelControl9.TabIndex = 48;
+            this.labelControl9.Text = "Status : ";
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(851, 210);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(74, 23);
+            this.labelControl10.TabIndex = 49;
+            this.labelControl10.Text = "Address :";
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(914, 149);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(143, 23);
+            this.labelControl11.TabIndex = 50;
+            this.labelControl11.Text = "Contact Number :";
+            // 
+            // teContactNumber
+            // 
+            this.teContactNumber.Location = new System.Drawing.Point(1072, 140);
+            this.teContactNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.teContactNumber.Name = "teContactNumber";
+            this.teContactNumber.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.teContactNumber.Properties.Appearance.Options.UseBorderColor = true;
+            this.teContactNumber.Size = new System.Drawing.Size(224, 34);
+            this.teContactNumber.TabIndex = 51;
+            this.teContactNumber.EditValueChanged += new System.EventHandler(this.teContactNumber_EditValueChanged);
             // 
             // ADD_PATIENT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2370, 913);
-            this.Controls.Add(this.ADDPATIENT);
+            this.ClientSize = new System.Drawing.Size(1361, 618);
+            this.Controls.Add(this.teContactNumber);
+            this.Controls.Add(this.labelControl11);
+            this.Controls.Add(this.labelControl10);
+            this.Controls.Add(this.labelControl9);
+            this.Controls.Add(this.labelControl8);
+            this.Controls.Add(this.labelControl7);
+            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.labelControl6);
+            this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.KNOWNALLERGIES_SYMPTOMS);
-            this.Controls.Add(this.GENERALINFORMATION);
-            this.Controls.Add(this.EMERGENCYPHONENUMBER);
-            this.Controls.Add(this.EMERGENCYCONTACTPERSON);
-            this.Controls.Add(this.textEdit9);
-            this.Controls.Add(this.textEdit8);
-            this.Controls.Add(this.textEdit7);
-            this.Controls.Add(this.textEdit6);
-            this.Controls.Add(this.PARENTGUARDIANNAME);
-            this.Controls.Add(this.BIRTHDATE);
-            this.Controls.Add(this.ADDRESS);
-            this.Controls.Add(this.LASTNAME);
+            this.Controls.Add(this.labelControl4);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.cbe_Course);
+            this.Controls.Add(this.comboBoxEdit1);
+            this.Controls.Add(this.meAllergies);
+            this.Controls.Add(this.deBirthdate);
+            this.Controls.Add(this.btnAddPatient);
+            this.Controls.Add(this.teAge);
+            this.Controls.Add(this.teEmergencyPhoneNumber);
             this.Controls.Add(this.FIRSTNAME);
-            this.Controls.Add(this.BIRTHDATEBUTTON);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.LASTNAMEBUTTON);
-            this.Controls.Add(this.FIRSTNAMEBUTTON);
-            this.Controls.Add(this.pictureEdit1);
+            this.Controls.Add(this.teAddress);
+            this.Controls.Add(this.teParent);
+            this.Controls.Add(this.teLastName);
+            this.Controls.Add(this.teFirstName);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ADD_PATIENT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADD_PATIENT";
             this.Load += new System.EventHandler(this.ADD_PATIENT_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FIRSTNAMEBUTTON.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LASTNAMEBUTTON.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BIRTHDATEBUTTON.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teFirstName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teLastName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teParent.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teAddress.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teEmergencyPhoneNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teAge.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deBirthdate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deBirthdate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meAllergies.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbe_Course.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teContactNumber.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.TextEdit FIRSTNAMEBUTTON;
-        private DevExpress.XtraEditors.TextEdit LASTNAMEBUTTON;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit teFirstName;
+        private DevExpress.XtraEditors.TextEdit teLastName;
+        private DevExpress.XtraEditors.TextEdit teParent;
+        private DevExpress.XtraEditors.TextEdit teAddress;
         private DevExpress.XtraEditors.LabelControl FIRSTNAME;
-        private DevExpress.XtraEditors.LabelControl LASTNAME;
-        private DevExpress.XtraEditors.LabelControl ADDRESS;
-        private DevExpress.XtraEditors.LabelControl BIRTHDATE;
-        private DevExpress.XtraEditors.LabelControl PARENTGUARDIANNAME;
-        private DevExpress.XtraEditors.TextEdit BIRTHDATEBUTTON;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
-        private DevExpress.XtraEditors.LabelControl EMERGENCYCONTACTPERSON;
-        private DevExpress.XtraEditors.LabelControl EMERGENCYPHONENUMBER;
-        private DevExpress.XtraEditors.LabelControl GENERALINFORMATION;
-        private DevExpress.XtraEditors.LabelControl KNOWNALLERGIES_SYMPTOMS;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit teEmergencyPhoneNumber;
+        private DevExpress.XtraEditors.TextEdit teAge;
+        private DevExpress.XtraEditors.SimpleButton btnAddPatient;
+        private DevExpress.XtraEditors.DateEdit deBirthdate;
+        private DevExpress.XtraEditors.MemoEdit meAllergies;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.ComboBoxEdit cbe_Course;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton ADDPATIENT;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.TextEdit teContactNumber;
     }
 }

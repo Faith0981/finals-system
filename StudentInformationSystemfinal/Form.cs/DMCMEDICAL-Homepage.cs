@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using StudentInformationSystemfinal.Models;
 
 namespace StudentInformationSystemfinal.Form.cs
 {
@@ -27,11 +28,7 @@ namespace StudentInformationSystemfinal.Form.cs
 
         private void USER_Click(object sender, EventArgs e)
         {
-            USER user = new USER();
-            user.MdiParent = this;
-            user.Show();
-
-            //user.Show();
+          
         }
 
         private void labelControl1_Click(object sender, EventArgs e)
@@ -75,6 +72,24 @@ namespace StudentInformationSystemfinal.Form.cs
             CCMA ccma = new CCMA();
             ccma.MdiParent = this;
             ccma.Show();
+        }
+
+        private void accordionControl1_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout",
+                                          MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Perform logout actions (e.g., closing forms, clearing session data)
+                this.Close(); // Closes the current form
+            }
         }
     }
 }

@@ -53,68 +53,148 @@ namespace StudentInformationSystemfinal.Form.cs
         {
             try
             {
-                string firstName = FIRSTNAMEBUTTON.Text;
-                string lastName = LASTNAMEBUTTON.Text;
-                int age = Convert.ToInt32(textEdit1.Text);
-                string birthDate = BIRTHDATEBUTTON.Text;
-                string parentGuardian = textEdit3.Text;
-                string address = textEdit4.Text;
-                string contactPerson = textEdit6.Text;
-                long phoneNumber = long.Parse(textEdit6.Text);
-                string knownAllergies = textEdit8.Text;
-                string generalInformation = textEdit9.Text;
-
-                //POLYMORPHISM
-                Person patient = new Patient
+                // Collect patient information from input fields
+                string patientName = teFirstName.Text.Trim();
+                string lastName = teLastName.Text.Trim();
+                int age;
+                // Validate age input
+                if (!int.TryParse(teAge.Text, out age))
                 {
-                    FirstName = firstName,
-                    LastName = lastName,
-                    Age = age,
-                    BirthDate = birthDate,
-                    ParentGuardianName = parentGuardian,
-                    Address = address,
-                    EmergencyContactPerson = contactPerson,
-                    EmergencyContactNumber = phoneNumber,
-                    KnownAllergies = knownAllergies,
-                    GeneralInformation = generalInformation
+                    XtraMessageBox.Show("Please enter a valid age.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Exit the method
+                }
 
-                };
+                string birthDate = deBirthdate.EditValue.ToString();
+                string parentGuardian = teParent.Text.Trim();
+                string address = teAddress.Text.Trim();
+                string contactNumber = teContactNumber.Text.Trim();
+
+                long phoneNumber;
+                // Validate phone number input
+                if (!long.TryParse(teEmergencyPhoneNumber.Text, out phoneNumber))
+                {
+                    XtraMessageBox.Show("Please enter a valid phone number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Exit the method
+                }
+
+                string knownAllergies = meAllergies.Text.Trim();
+                string course = cbe_Course.Text.Trim();
+
+                // Check for validation: First name and last name cannot be the same
+                if (patientName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    XtraMessageBox.Show("First name and last name cannot be the same.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Exit the method
+                }
 
                 using (var connection = new SQLiteConnection(_connectionString))
                 {
-                    var query = @"INSERT INTO Patient(FirstName, LastName, Age, BirthDate, ParentGuardianName, Address, EmergencyContactPerson, EmergencyContactNumber, KnownAllergies, GeneralInformation)
-                            VALUES (@FirstName, @LastName, @Age, @BirthDate, @ParentGuardianName, @Address, @EmergencyContactPerson, @EmergencyContactNumber, @KnownAllergies, @GeneralInformation) ";
-                    connection.Execute(query, patient);
-                    XtraMessageBox.Show("Patient successfully saved to the database");
+                    // Check if patient with same full name exists
+                    var existsQuery = @"SELECT COUNT(*) FROM Patient WHERE FirstName = @FirstName AND LastName = @LastName";
+                    var count = connection.ExecuteScalar<int>(existsQuery, new { FirstName = patientName, LastName = lastName });
+                    if (count > 0)
+                    {
+                        XtraMessageBox.Show("A patient with the same name already exists.", "Duplicate Entry", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return; // Exit the method
+                    }
+
+                    // Create a new Patient object
+                    Person patient = new Patient
+                    {
+                        FirstName = patientName,
+                        LastName = lastName,
+                        Age = age,
+                        BirthDate = birthDate,
+                        ParentGuardianName = parentGuardian,
+                        ContactNumber = contactNumber,
+                        //teEmergencyPhoneNumber = emergencyContactNumber,
+                        KnownAllergies = knownAllergies,
+                        FullName = $"{patientName} {lastName}",
+                        Course = course,
+
+                    };
+
+                    // Insert patient into the databaseI
+                    var insertQuery = @"INSERT INTO Patient(
+                                FirstName, 
+                                LastName,
+                                Age,
+                                BirthDate,
+                                ParentGuardianName,
+                                Address,   
+                                KnownAllergies,  
+                                FullName, 
+                                Course,
+                                ContactNumber) 
+                              VALUES (@FirstName, @LastName, @Age, @BirthDate, @ParentGuardianName, @Address, @EmergencyContactPerson, @EmergencyContactNumber, @KnownAllergies, @FullName, @Course, @ContactNumber)";
+
+                    connection.Execute(insertQuery, patient);
+                    XtraMessageBox.Show("Patient successfully saved");
+                    //PatientsInfo?.LoadPatients();
+                    this.Close();
+
                 }
             }
             catch (Exception ex)
             {
-                XtraMessageBox.Show(ex.Message);
+                XtraMessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Title = "Select an Image",
-                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif",
-                FilterIndex = 1,
-                Multiselect = false
-            };
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                // Load the selected image for preview
-                Image imgPreview = Image.FromFile(openFileDialog.FileName);
-                pictureEdit1.Image = imgPreview;
-            }
+        private PatientsInfo _patientsInfoForm = new PatientsInfo();
 
 
-        }
+
+
+
+
 
         private void ADD_PATIENT_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit7_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimeOffsetEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deBirthdate_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void meAllergies_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxEdit2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teContactNumber_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teLastName_EditValueChanged(object sender, EventArgs e)
         {
 
         }
