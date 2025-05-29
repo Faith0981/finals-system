@@ -152,6 +152,7 @@
             // LastName
             // 
             this.LastName.Caption = "Last Name";
+            this.LastName.FieldName = "LastName";
             this.LastName.MinWidth = 24;
             this.LastName.Name = "LastName";
             this.LastName.Visible = true;

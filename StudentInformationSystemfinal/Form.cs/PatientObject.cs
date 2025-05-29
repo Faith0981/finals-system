@@ -60,20 +60,7 @@ namespace StudentInformationSystemfinal.Form.cs
         {
             //useless code
         }
-        private List<Patient> patientsList; // Assume this holds all the patient data
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.ColumnIndex == 3) // 3 = 'View' button column
-            {
-                // Get the patient from the list using the row index
-                Patient selectedPatient = patientsList[e.RowIndex];
-
-                // Open the PatientsInfo form and pass the patient
-                PatientsInfo infoForm = new PatientsInfo(selectedPatient);
-                infoForm.Show(); // or ShowDialog() if you want it modal
-            }
-        }
 
         private void DeleteMethod(int id) 
         {

@@ -34,7 +34,6 @@
             this.accHomePage = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.PATIENTS = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.CC_MA = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.SuspendLayout();
@@ -46,8 +45,7 @@
             this.accordionControlSeparator1,
             this.accHomePage,
             this.PATIENTS,
-            this.CC_MA,
-            this.accordionControlElement1});
+            this.CC_MA});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
@@ -83,13 +81,6 @@
             this.CC_MA.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.CC_MA.Text = "CCMA";
             this.CC_MA.Click += new System.EventHandler(this.CC_MA_Click);
-            // 
-            // accordionControlElement1
-            // 
-            this.accordionControlElement1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement1.ImageOptions.SvgImage")));
-            this.accordionControlElement1.Name = "accordionControlElement1";
-            this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement1.Text = "Total Patients";
             // 
             // simpleButton1
             // 
@@ -130,7 +121,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement PATIENTS;
         private DevExpress.XtraBars.Navigation.AccordionControlElement CC_MA;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accHomePage;
     }
 }

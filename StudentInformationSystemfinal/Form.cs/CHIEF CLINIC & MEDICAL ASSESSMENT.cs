@@ -69,8 +69,8 @@ namespace StudentInformationSystemfinal.Form.cs
         {
             {
                 string connectionString = @"Data Source=.\HealthMonitoringSystem.db;Version=3;";
-                string firstName = textBox4.Text.Trim();
-                string lastName = textBox5.Text.Trim();
+                string firstName = teFirstName.Text.Trim();
+                string lastName = teLastName.Text.Trim();
 
                 using (SQLiteConnection conn = new SQLiteConnection(connectionString))
                 {
@@ -103,7 +103,7 @@ namespace StudentInformationSystemfinal.Form.cs
                     {
                         cmd.Parameters.AddWithValue("@FirstName", firstName);
                         cmd.Parameters.AddWithValue("@LastName", lastName);
-                        cmd.Parameters.AddWithValue("@DateOfVisit", dateEdit1.EditValue);
+                        cmd.Parameters.AddWithValue("@DateOfVisit", dateDateOfVisit.EditValue);
                         cmd.Parameters.AddWithValue("@TimeOfVisit", dateTimeOffsetEdit1.EditValue);
                         cmd.Parameters.AddWithValue("@Temperature", spinEdit1.Value);
                         cmd.Parameters.AddWithValue("@PulseRate", numericUpDown1.Value);

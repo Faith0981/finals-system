@@ -43,7 +43,7 @@ namespace StudentInformationSystemfinal
             DMCMEDICAL_Homepage mdiParent = this.MdiParent as DMCMEDICAL_Homepage;
 
 
-            this.Close();
+            //this.Close();
 
             PatientObject patientObject = new PatientObject();
             patientObject.MdiParent = mdiParent;
@@ -99,7 +99,7 @@ namespace StudentInformationSystemfinal
                 using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
                 {
                     totalPatients = Convert.ToInt32(cmd.ExecuteScalar());
-                    btnTotalPatients.Text = $"Total Patients: {totalPatients.ToString()}";
+                    btnTotalPatientsc.Text = $"Total Patients: {totalPatients.ToString()}";
                 }
             }
             

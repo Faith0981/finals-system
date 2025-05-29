@@ -41,7 +41,7 @@
             this.INITIALASSESSMENT = new DevExpress.XtraEditors.LabelControl();
             this.RECOMMENDATION = new DevExpress.XtraEditors.LabelControl();
             this.ACTIONTAKEN = new DevExpress.XtraEditors.LabelControl();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.dateDateOfVisit = new DevExpress.XtraEditors.DateEdit();
             this.CHIEFCOMPLAIN = new DevExpress.XtraEditors.LabelControl();
             this.spinEdit1 = new DevExpress.XtraEditors.SpinEdit();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -54,12 +54,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            this.teLastName = new System.Windows.Forms.TextBox();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.memoEdit4 = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.teFirstName = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDateOfVisit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDateOfVisit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
@@ -68,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeOffsetEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // VITALSIGNS
@@ -86,7 +89,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(920, 202);
+            this.labelControl3.Location = new System.Drawing.Point(365, 487);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(126, 21);
@@ -176,7 +179,7 @@
             // 
             this.INITIALASSESSMENT.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.INITIALASSESSMENT.Appearance.Options.UseFont = true;
-            this.INITIALASSESSMENT.Location = new System.Drawing.Point(470, 54);
+            this.INITIALASSESSMENT.Location = new System.Drawing.Point(471, 39);
             this.INITIALASSESSMENT.Margin = new System.Windows.Forms.Padding(2);
             this.INITIALASSESSMENT.Name = "INITIALASSESSMENT";
             this.INITIALASSESSMENT.Size = new System.Drawing.Size(145, 21);
@@ -187,7 +190,7 @@
             // 
             this.RECOMMENDATION.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RECOMMENDATION.Appearance.Options.UseFont = true;
-            this.RECOMMENDATION.Location = new System.Drawing.Point(470, 350);
+            this.RECOMMENDATION.Location = new System.Drawing.Point(473, 256);
             this.RECOMMENDATION.Margin = new System.Windows.Forms.Padding(2);
             this.RECOMMENDATION.Name = "RECOMMENDATION";
             this.RECOMMENDATION.Size = new System.Drawing.Size(144, 21);
@@ -198,27 +201,27 @@
             // 
             this.ACTIONTAKEN.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ACTIONTAKEN.Appearance.Options.UseFont = true;
-            this.ACTIONTAKEN.Location = new System.Drawing.Point(470, 191);
+            this.ACTIONTAKEN.Location = new System.Drawing.Point(471, 149);
             this.ACTIONTAKEN.Margin = new System.Windows.Forms.Padding(2);
             this.ACTIONTAKEN.Name = "ACTIONTAKEN";
             this.ACTIONTAKEN.Size = new System.Drawing.Size(108, 21);
             this.ACTIONTAKEN.TabIndex = 49;
             this.ACTIONTAKEN.Text = "Action Taken :";
             // 
-            // dateEdit1
+            // dateDateOfVisit
             // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(145, 141);
-            this.dateEdit1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateDateOfVisit.EditValue = null;
+            this.dateDateOfVisit.Location = new System.Drawing.Point(145, 141);
+            this.dateDateOfVisit.Margin = new System.Windows.Forms.Padding(2);
+            this.dateDateOfVisit.Name = "dateDateOfVisit";
+            this.dateDateOfVisit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateDateOfVisit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.ClassicNew;
-            this.dateEdit1.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dateEdit1.Size = new System.Drawing.Size(200, 32);
-            this.dateEdit1.TabIndex = 50;
+            this.dateDateOfVisit.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.ClassicNew;
+            this.dateDateOfVisit.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
+            this.dateDateOfVisit.Size = new System.Drawing.Size(200, 32);
+            this.dateDateOfVisit.TabIndex = 50;
             // 
             // CHIEFCOMPLAIN
             // 
@@ -261,30 +264,30 @@
             // 
             // memoEdit1
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(470, 84);
+            this.memoEdit1.Location = new System.Drawing.Point(470, 64);
             this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(390, 77);
+            this.memoEdit1.Size = new System.Drawing.Size(390, 61);
             this.memoEdit1.TabIndex = 55;
             // 
             // memoEdit2
             // 
-            this.memoEdit2.Location = new System.Drawing.Point(470, 218);
+            this.memoEdit2.Location = new System.Drawing.Point(469, 176);
             this.memoEdit2.Name = "memoEdit2";
-            this.memoEdit2.Size = new System.Drawing.Size(390, 90);
+            this.memoEdit2.Size = new System.Drawing.Size(390, 61);
             this.memoEdit2.TabIndex = 56;
             // 
             // memoEdit3
             // 
-            this.memoEdit3.Location = new System.Drawing.Point(471, 376);
+            this.memoEdit3.Location = new System.Drawing.Point(472, 291);
             this.memoEdit3.Name = "memoEdit3";
-            this.memoEdit3.Size = new System.Drawing.Size(390, 90);
+            this.memoEdit3.Size = new System.Drawing.Size(387, 61);
             this.memoEdit3.TabIndex = 57;
             this.memoEdit3.EditValueChanged += new System.EventHandler(this.memoEdit3_EditValueChanged);
             // 
             // comboBoxEdit1
             // 
             this.comboBoxEdit1.EditValue = "";
-            this.comboBoxEdit1.Location = new System.Drawing.Point(889, 229);
+            this.comboBoxEdit1.Location = new System.Drawing.Point(353, 517);
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -333,25 +336,6 @@
             this.textBox3.Size = new System.Drawing.Size(175, 29);
             this.textBox3.TabIndex = 63;
             // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(47, 66);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(90, 21);
-            this.labelControl2.TabIndex = 66;
-            this.labelControl2.Text = "First Name :";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(147, 64);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 29);
-            this.textBox4.TabIndex = 67;
-            // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -363,23 +347,62 @@
             this.labelControl1.TabIndex = 68;
             this.labelControl1.Text = "Last Name :";
             // 
-            // textBox5
+            // teLastName
             // 
-            this.textBox5.Location = new System.Drawing.Point(147, 103);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 29);
-            this.textBox5.TabIndex = 69;
+            this.teLastName.Location = new System.Drawing.Point(147, 103);
+            this.teLastName.Multiline = true;
+            this.teLastName.Name = "teLastName";
+            this.teLastName.Size = new System.Drawing.Size(200, 29);
+            this.teLastName.TabIndex = 69;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(469, 368);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(357, 21);
+            this.labelControl2.TabIndex = 70;
+            this.labelControl2.Text = "Chief Complaint (Symtomps/Reason For Visit) :";
+            // 
+            // memoEdit4
+            // 
+            this.memoEdit4.Location = new System.Drawing.Point(473, 397);
+            this.memoEdit4.Name = "memoEdit4";
+            this.memoEdit4.Size = new System.Drawing.Size(387, 61);
+            this.memoEdit4.TabIndex = 71;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(40, 69);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(99, 19);
+            this.labelControl4.TabIndex = 72;
+            this.labelControl4.Text = "First Name :";
+            // 
+            // teFirstName
+            // 
+            this.teFirstName.Location = new System.Drawing.Point(147, 62);
+            this.teFirstName.Multiline = true;
+            this.teFirstName.Name = "teFirstName";
+            this.teFirstName.Size = new System.Drawing.Size(200, 29);
+            this.teFirstName.TabIndex = 73;
             // 
             // CCMA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 519);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.textBox4);
+            this.ClientSize = new System.Drawing.Size(873, 590);
+            this.Controls.Add(this.teFirstName);
+            this.Controls.Add(this.labelControl4);
+            this.Controls.Add(this.memoEdit4);
             this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.teLastName);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -389,7 +412,7 @@
             this.Controls.Add(this.memoEdit1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.spinEdit1);
-            this.Controls.Add(this.dateEdit1);
+            this.Controls.Add(this.dateDateOfVisit);
             this.Controls.Add(this.ACTIONTAKEN);
             this.Controls.Add(this.RECOMMENDATION);
             this.Controls.Add(this.INITIALASSESSMENT);
@@ -410,8 +433,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CCMA";
             this.Load += new System.EventHandler(this.CCMA_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDateOfVisit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateDateOfVisit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
@@ -420,6 +443,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeOffsetEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,7 +462,7 @@
         private DevExpress.XtraEditors.LabelControl INITIALASSESSMENT;
         private DevExpress.XtraEditors.LabelControl RECOMMENDATION;
         private DevExpress.XtraEditors.LabelControl ACTIONTAKEN;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit dateDateOfVisit;
         private DevExpress.XtraEditors.LabelControl CHIEFCOMPLAIN;
         private DevExpress.XtraEditors.SpinEdit spinEdit1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -451,9 +475,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.TextBox textBox4;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox teLastName;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.MemoEdit memoEdit4;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private System.Windows.Forms.TextBox teFirstName;
     }
 }

@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using StudentInformationSystemfinal.Forms;
 using StudentInformationSystemfinal.Models;
 
 namespace StudentInformationSystemfinal.Form.cs
 {
     public partial class DMCMEDICAL_Homepage : DevExpress.XtraEditors.XtraForm
     {
+
+        private AddPatient _addpatient;
         public DMCMEDICAL_Homepage()
         {
             InitializeComponent();
@@ -25,32 +28,6 @@ namespace StudentInformationSystemfinal.Form.cs
             homepagetwo.MdiParent = this;
             homepagetwo.Show();
         }
-
-        private void USER_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void DMCMEDICAL_Homepage_Load(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
@@ -73,13 +50,6 @@ namespace StudentInformationSystemfinal.Form.cs
             ccma.MdiParent = this;
             ccma.Show();
         }
-
-        private void accordionControl1_Click(object sender, EventArgs e)
-        {
-           
-
-        }
-
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout",
@@ -97,6 +67,45 @@ namespace StudentInformationSystemfinal.Form.cs
             DMCMEDICAL patient = new DMCMEDICAL();
             patient.MdiParent = this;
             patient.Show();
+
+            if (_addpatient == null) //Ensure it's initialized only once
+            {
+                _addpatient = new AddPatient();
+            }
+
+            //panelBody.Controls.Clear();
+            //_addpatient.Dock = DockStyle.Fill;
+            //panelBody.Controls.Add(_addpatient);
+        }
+
+        private void accordionControlElement1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void USER_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void labelControl3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void labelControl2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void accordionControl1_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }
