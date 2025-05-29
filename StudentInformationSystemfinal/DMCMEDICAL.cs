@@ -13,9 +13,9 @@ using StudentInformationSystemfinal.Form.cs;
 
 namespace StudentInformationSystemfinal
 {
-    public partial class DMCMEDICAL_Homepage2 : DevExpress.XtraEditors.XtraForm
+    public partial class DMCMEDICAL : DevExpress.XtraEditors.XtraForm
     {
-        public DMCMEDICAL_Homepage2()
+        public DMCMEDICAL()
         {
             InitializeComponent();
         }

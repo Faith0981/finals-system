@@ -60,17 +60,17 @@
             this.ADDPATIENT = new DevExpress.XtraEditors.SimpleButton();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LastName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.teContactNumber = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemButtonEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.repositoryItemButtonEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,7 +92,7 @@
             this.PATIENT1.Location = new System.Drawing.Point(11, 11);
             this.PATIENT1.Margin = new System.Windows.Forms.Padding(2);
             this.PATIENT1.Name = "PATIENT1";
-            this.PATIENT1.Size = new System.Drawing.Size(56, 22);
+            this.PATIENT1.Size = new System.Drawing.Size(52, 20);
             this.PATIENT1.TabIndex = 1;
             this.PATIENT1.Text = "Patient";
             // 
@@ -127,9 +127,9 @@
             this.gridView1.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
+            this.LastName,
             this.gridColumn2,
-            this.teContactNumber,
-            this.gridColumn5});
+            this.teContactNumber});
             this.gridView1.DetailHeight = 224;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -140,14 +140,23 @@
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = " Patient Name";
-            this.gridColumn1.FieldName = "FullName";
+            this.gridColumn1.Caption = "First Name";
+            this.gridColumn1.FieldName = "FirstName";
             this.gridColumn1.MinWidth = 23;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsEditForm.UseEditorColRowSpan = false;
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.VisibleIndex = 1;
             this.gridColumn1.Width = 212;
+            // 
+            // LastName
+            // 
+            this.LastName.Caption = "Last Name";
+            this.LastName.MinWidth = 24;
+            this.LastName.Name = "LastName";
+            this.LastName.Visible = true;
+            this.LastName.VisibleIndex = 0;
+            this.LastName.Width = 90;
             // 
             // gridColumn2
             // 
@@ -156,7 +165,7 @@
             this.gridColumn2.MinWidth = 23;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.VisibleIndex = 2;
             this.gridColumn2.Width = 242;
             // 
             // teContactNumber
@@ -166,20 +175,24 @@
             this.teContactNumber.MinWidth = 23;
             this.teContactNumber.Name = "teContactNumber";
             this.teContactNumber.Visible = true;
-            this.teContactNumber.VisibleIndex = 2;
+            this.teContactNumber.VisibleIndex = 3;
             this.teContactNumber.Width = 255;
             // 
-            // gridColumn5
+            // gridControl1
             // 
-            this.gridColumn5.Caption = "Action";
-            this.gridColumn5.ColumnEdit = this.repositoryItemButtonEdit3;
-            this.gridColumn5.FieldName = "Action";
-            this.gridColumn5.MinWidth = 25;
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.OptionsEditForm.VisibleIndex = 1;
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
-            this.gridColumn5.Width = 228;
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.gridControl1.Location = new System.Drawing.Point(11, 100);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButtonEdit3});
+            this.gridControl1.Size = new System.Drawing.Size(1560, 915);
+            this.gridControl1.TabIndex = 7;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            this.gridControl1.Load += new System.EventHandler(this.gridControl1_Load);
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // repositoryItemButtonEdit3
             // 
@@ -198,22 +211,6 @@
             this.repositoryItemButtonEdit3.Name = "repositoryItemButtonEdit3";
             this.repositoryItemButtonEdit3.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit3.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButtonEdit3_ButtonClick);
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
-            this.gridControl1.Location = new System.Drawing.Point(11, 108);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemButtonEdit3});
-            this.gridControl1.Size = new System.Drawing.Size(1560, 915);
-            this.gridControl1.TabIndex = 7;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            this.gridControl1.Load += new System.EventHandler(this.gridControl1_Load);
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridColumn4
             // 
@@ -240,8 +237,8 @@
             this.Load += new System.EventHandler(this.PatientObject_Load);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,11 +253,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn teContactNumber;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit3;
+        private DevExpress.XtraGrid.Columns.GridColumn LastName;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace StudentInformationSystemfinal
 {
-    partial class DMCMEDICAL_Homepage2
+    partial class DMCMEDICAL
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DMCMEDICAL_Homepage2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DMCMEDICAL));
             this.btnAddPatients = new DevExpress.XtraEditors.SimpleButton();
             this.btnCCMA = new DevExpress.XtraEditors.SimpleButton();
             this.btnTotalPatients = new DevExpress.XtraEditors.SimpleButton();
@@ -48,10 +48,10 @@
             this.btnAddPatients.AppearancePressed.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAddPatients.AppearancePressed.Options.UseBackColor = true;
             this.btnAddPatients.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddPatients.ImageOptions.SvgImage")));
-            this.btnAddPatients.Location = new System.Drawing.Point(555, 276);
+            this.btnAddPatients.Location = new System.Drawing.Point(371, 279);
             this.btnAddPatients.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPatients.Name = "btnAddPatients";
-            this.btnAddPatients.Size = new System.Drawing.Size(436, 269);
+            this.btnAddPatients.Size = new System.Drawing.Size(269, 168);
             this.btnAddPatients.TabIndex = 0;
             this.btnAddPatients.Text = "ADD PATIENT";
             this.btnAddPatients.Click += new System.EventHandler(this.ADDPATIENT_Click);
@@ -63,10 +63,10 @@
             this.btnCCMA.AppearancePressed.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnCCMA.AppearancePressed.Options.UseBackColor = true;
             this.btnCCMA.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCCMA.ImageOptions.SvgImage")));
-            this.btnCCMA.Location = new System.Drawing.Point(1069, 276);
+            this.btnCCMA.Location = new System.Drawing.Point(688, 279);
             this.btnCCMA.Margin = new System.Windows.Forms.Padding(2);
             this.btnCCMA.Name = "btnCCMA";
-            this.btnCCMA.Size = new System.Drawing.Size(436, 269);
+            this.btnCCMA.Size = new System.Drawing.Size(375, 168);
             this.btnCCMA.TabIndex = 1;
             this.btnCCMA.Text = "          CHIEF COMPLAINT\r\n          MEDICAL ASSESSMENT";
             this.btnCCMA.Click += new System.EventHandler(this.btnCCMA_Click);
@@ -78,10 +78,10 @@
             this.btnTotalPatients.AppearancePressed.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnTotalPatients.AppearancePressed.Options.UseBackColor = true;
             this.btnTotalPatients.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTotalPatients.ImageOptions.SvgImage")));
-            this.btnTotalPatients.Location = new System.Drawing.Point(47, 276);
+            this.btnTotalPatients.Location = new System.Drawing.Point(26, 279);
             this.btnTotalPatients.Margin = new System.Windows.Forms.Padding(2);
             this.btnTotalPatients.Name = "btnTotalPatients";
-            this.btnTotalPatients.Size = new System.Drawing.Size(421, 269);
+            this.btnTotalPatients.Size = new System.Drawing.Size(269, 168);
             this.btnTotalPatients.TabIndex = 13;
             this.btnTotalPatients.Text = "TOTAL PATIENTS";
             this.btnTotalPatients.Click += new System.EventHandler(this.btnTotalPatients_Click);
@@ -93,10 +93,10 @@
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.lblSubheader);
             this.panelControl1.Controls.Add(this.lblWelcome);
-            this.panelControl1.Location = new System.Drawing.Point(11, 47);
+            this.panelControl1.Location = new System.Drawing.Point(21, 35);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1512, 86);
+            this.panelControl1.Size = new System.Drawing.Size(1037, 112);
             this.panelControl1.TabIndex = 14;
             // 
             // lblSubheader
@@ -106,7 +106,7 @@
             this.lblSubheader.Appearance.Options.UseFont = true;
             this.lblSubheader.Appearance.Options.UseForeColor = true;
             this.lblSubheader.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblSubheader.Location = new System.Drawing.Point(402, 43);
+            this.lblSubheader.Location = new System.Drawing.Point(189, 59);
             this.lblSubheader.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lblSubheader.Name = "lblSubheader";
             this.lblSubheader.Size = new System.Drawing.Size(669, 40);
@@ -123,17 +123,17 @@
             this.lblWelcome.Appearance.Options.UseFont = true;
             this.lblWelcome.Appearance.Options.UseForeColor = true;
             this.lblWelcome.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblWelcome.Location = new System.Drawing.Point(113, -10);
+            this.lblWelcome.Location = new System.Drawing.Point(245, 3);
             this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(1127, 61);
+            this.lblWelcome.Size = new System.Drawing.Size(558, 61);
             this.lblWelcome.TabIndex = 0;
-            this.lblWelcome.Text = "                                           WELCOME TO DMC MEDICAL CLINIC";
+            this.lblWelcome.Text = "WELCOME TO DMC MEDICAL CLINIC";
             this.lblWelcome.Click += new System.EventHandler(this.lblWelcome_Click);
             // 
             // toggleSwitch1
             // 
-            this.toggleSwitch1.Location = new System.Drawing.Point(1421, 0);
+            this.toggleSwitch1.Location = new System.Drawing.Point(956, -1);
             this.toggleSwitch1.Margin = new System.Windows.Forms.Padding(2);
             this.toggleSwitch1.Name = "toggleSwitch1";
             this.toggleSwitch1.Properties.AutoHeight = false;
@@ -143,11 +143,11 @@
             this.toggleSwitch1.TabIndex = 20;
             this.toggleSwitch1.Toggled += new System.EventHandler(this.toggleSwitch1_Toggled_1);
             // 
-            // DMCMEDICAL_Homepage2
+            // DMCMEDICAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1534, 877);
+            this.ClientSize = new System.Drawing.Size(1098, 559);
             this.Controls.Add(this.btnCCMA);
             this.Controls.Add(this.btnTotalPatients);
             this.Controls.Add(this.btnAddPatients);
@@ -157,9 +157,9 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DMCMEDICAL_Homepage2";
+            this.Name = "DMCMEDICAL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DMCMEDICAL_Homepage2";
+            this.Text = "DMCMEDICAL";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DMCMEDICAL_Homepage2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

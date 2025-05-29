@@ -40,7 +40,6 @@
             this.LOGIN = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbeUserTypes = new DevExpress.XtraEditors.ComboBoxEdit();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.teUserName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tePassword.Properties)).BeginInit();
@@ -48,13 +47,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbeUserTypes.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // teUserName
             // 
-            this.teUserName.Location = new System.Drawing.Point(531, 97);
+            this.teUserName.Location = new System.Drawing.Point(528, 128);
             this.teUserName.Margin = new System.Windows.Forms.Padding(2);
             this.teUserName.Name = "teUserName";
             this.teUserName.Properties.AdvancedModeOptions.Label = "UserName";
@@ -74,7 +72,7 @@
             // tePassword
             // 
             this.tePassword.EditValue = "";
-            this.tePassword.Location = new System.Drawing.Point(531, 173);
+            this.tePassword.Location = new System.Drawing.Point(528, 204);
             this.tePassword.Margin = new System.Windows.Forms.Padding(2);
             this.tePassword.Name = "tePassword";
             this.tePassword.Properties.AdvancedModeOptions.Label = "Password";
@@ -146,7 +144,7 @@
             this.LOGIN.Appearance.Options.UseFont = true;
             this.LOGIN.Appearance.Options.UseForeColor = true;
             this.LOGIN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LOGIN.Location = new System.Drawing.Point(579, 312);
+            this.LOGIN.Location = new System.Drawing.Point(573, 330);
             this.LOGIN.Margin = new System.Windows.Forms.Padding(2);
             this.LOGIN.Name = "LOGIN";
             this.LOGIN.Size = new System.Drawing.Size(176, 45);
@@ -163,7 +161,6 @@
             this.panelControl1.AutoSize = true;
             this.panelControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelControl1.Controls.Add(this.pictureBox1);
-            this.panelControl1.Controls.Add(this.cbeUserTypes);
             this.panelControl1.Controls.Add(this.LOGIN);
             this.panelControl1.Controls.Add(this.tePassword);
             this.panelControl1.Controls.Add(this.teUserName);
@@ -185,24 +182,6 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // cbeUserTypes
-            // 
-            this.cbeUserTypes.Location = new System.Drawing.Point(531, 250);
-            this.cbeUserTypes.Margin = new System.Windows.Forms.Padding(2);
-            this.cbeUserTypes.MenuManager = this.barManager1;
-            this.cbeUserTypes.Name = "cbeUserTypes";
-            this.cbeUserTypes.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(242)))), ((int)(((byte)(226)))));
-            this.cbeUserTypes.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbeUserTypes.Properties.Appearance.Options.UseBackColor = true;
-            this.cbeUserTypes.Properties.Appearance.Options.UseFont = true;
-            this.cbeUserTypes.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbeUserTypes.Properties.Items.AddRange(new object[] {
-            "Administrator",
-            "Nurse"});
-            this.cbeUserTypes.Size = new System.Drawing.Size(285, 42);
-            this.cbeUserTypes.TabIndex = 18;
             // 
             // LOGINForm
             // 
@@ -230,7 +209,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbeUserTypes.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,7 +225,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraEditors.SimpleButton LOGIN;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.ComboBoxEdit cbeUserTypes;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

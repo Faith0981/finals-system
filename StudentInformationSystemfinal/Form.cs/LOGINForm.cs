@@ -49,31 +49,7 @@ namespace StudentInformationSystemfinal
             throw new NotImplementedException();
         }
 
-        private void richEditControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StudentInformationForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tePassword_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelControl1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void LOGIN2_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
+       
 
         UserCredentials userCredentials = new UserCredentials();
 
@@ -82,27 +58,11 @@ namespace StudentInformationSystemfinal
 
             string inputUsername = teUserName.Text;
             string inputPassword = tePassword.Text;
-            string userTypeChoice = cbeUserTypes.SelectedItem?.ToString();
 
-            if (string.IsNullOrEmpty(inputUsername) || string.IsNullOrEmpty(inputPassword) || string.IsNullOrEmpty(userTypeChoice)) {
+            if (string.IsNullOrEmpty(inputUsername) || string.IsNullOrEmpty(inputPassword)) {
                 XtraMessageBox.Show("Please fill up all the fields!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
-
-            if (userTypeChoice == "Nurse")
-            {
-                if (inputUsername == userCredentials.Username && inputPassword == userCredentials.Password)
-                {
-                    this.Hide();
-                    Nurse_Homepage nurseHomePage = new Nurse_Homepage();
-                    nurseHomePage.Show();
-                }
-                else {
-                    XtraMessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
-            else if (userTypeChoice == "Administrator") {
                 if (inputUsername == userCredentials.Username && inputPassword == userCredentials.Password)
                 {
                     this.Hide();
@@ -114,7 +74,7 @@ namespace StudentInformationSystemfinal
                     return;
                 }
             }
-        }
+        
 
         private void teUserName_EditValueChanged(object sender, EventArgs e)
         {
@@ -139,6 +99,31 @@ namespace StudentInformationSystemfinal
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+        private void richEditControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentInformationForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tePassword_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LOGIN2_Click(object sender, EventArgs e)
+        {
+
 
         }
     }

@@ -75,7 +75,7 @@
             this.VITALSIGNS.Appearance.Font = new System.Drawing.Font("Tahoma", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VITALSIGNS.Appearance.Options.UseFont = true;
             this.VITALSIGNS.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.VITALSIGNS.Location = new System.Drawing.Point(111, 249);
+            this.VITALSIGNS.Location = new System.Drawing.Point(2, 242);
             this.VITALSIGNS.Margin = new System.Windows.Forms.Padding(2);
             this.VITALSIGNS.Name = "VITALSIGNS";
             this.VITALSIGNS.Size = new System.Drawing.Size(250, 35);
@@ -86,10 +86,10 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(920, 202);
+            this.labelControl3.Location = new System.Drawing.Point(867, 719);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(126, 21);
+            this.labelControl3.Size = new System.Drawing.Size(133, 23);
             this.labelControl3.TabIndex = 38;
             this.labelControl3.Text = "Attending Nurse";
             // 
@@ -97,10 +97,10 @@
             // 
             this.DATEOFVISIT.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DATEOFVISIT.Appearance.Options.UseFont = true;
-            this.DATEOFVISIT.Location = new System.Drawing.Point(25, 146);
+            this.DATEOFVISIT.Location = new System.Drawing.Point(35, 121);
             this.DATEOFVISIT.Margin = new System.Windows.Forms.Padding(2);
             this.DATEOFVISIT.Name = "DATEOFVISIT";
-            this.DATEOFVISIT.Size = new System.Drawing.Size(112, 19);
+            this.DATEOFVISIT.Size = new System.Drawing.Size(116, 21);
             this.DATEOFVISIT.TabIndex = 40;
             this.DATEOFVISIT.Text = "Date of Visit :";
             // 
@@ -108,10 +108,10 @@
             // 
             this.TIMEOFVISIT.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TIMEOFVISIT.Appearance.Options.UseFont = true;
-            this.TIMEOFVISIT.Location = new System.Drawing.Point(23, 185);
+            this.TIMEOFVISIT.Location = new System.Drawing.Point(33, 194);
             this.TIMEOFVISIT.Margin = new System.Windows.Forms.Padding(2);
             this.TIMEOFVISIT.Name = "TIMEOFVISIT";
-            this.TIMEOFVISIT.Size = new System.Drawing.Size(114, 19);
+            this.TIMEOFVISIT.Size = new System.Drawing.Size(117, 21);
             this.TIMEOFVISIT.TabIndex = 41;
             this.TIMEOFVISIT.Text = "Time of Visit :";
             // 
@@ -119,10 +119,10 @@
             // 
             this.TEMPERATURE.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TEMPERATURE.Appearance.Options.UseFont = true;
-            this.TEMPERATURE.Location = new System.Drawing.Point(36, 291);
+            this.TEMPERATURE.Location = new System.Drawing.Point(20, 308);
             this.TEMPERATURE.Margin = new System.Windows.Forms.Padding(2);
             this.TEMPERATURE.Name = "TEMPERATURE";
-            this.TEMPERATURE.Size = new System.Drawing.Size(118, 19);
+            this.TEMPERATURE.Size = new System.Drawing.Size(120, 21);
             this.TEMPERATURE.TabIndex = 42;
             this.TEMPERATURE.Text = "Temperature :";
             this.TEMPERATURE.Click += new System.EventHandler(this.TEMPERATURE_Click);
@@ -131,10 +131,10 @@
             // 
             this.RESPIRATORYRATE.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RESPIRATORYRATE.Appearance.Options.UseFont = true;
-            this.RESPIRATORYRATE.Location = new System.Drawing.Point(2, 360);
+            this.RESPIRATORYRATE.Location = new System.Drawing.Point(20, 417);
             this.RESPIRATORYRATE.Margin = new System.Windows.Forms.Padding(2);
             this.RESPIRATORYRATE.Name = "RESPIRATORYRATE";
-            this.RESPIRATORYRATE.Size = new System.Drawing.Size(150, 19);
+            this.RESPIRATORYRATE.Size = new System.Drawing.Size(154, 21);
             this.RESPIRATORYRATE.TabIndex = 43;
             this.RESPIRATORYRATE.Text = "Respiratory Rate :";
             // 
@@ -142,10 +142,10 @@
             // 
             this.PULSERATE.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PULSERATE.Appearance.Options.UseFont = true;
-            this.PULSERATE.Location = new System.Drawing.Point(53, 328);
+            this.PULSERATE.Location = new System.Drawing.Point(20, 364);
             this.PULSERATE.Margin = new System.Windows.Forms.Padding(2);
             this.PULSERATE.Name = "PULSERATE";
-            this.PULSERATE.Size = new System.Drawing.Size(99, 19);
+            this.PULSERATE.Size = new System.Drawing.Size(101, 21);
             this.PULSERATE.TabIndex = 44;
             this.PULSERATE.Text = "Pulse Rate :";
             this.PULSERATE.Click += new System.EventHandler(this.PULSERATE_Click);
@@ -154,10 +154,10 @@
             // 
             this.BLOODPRESSURE.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BLOODPRESSURE.Appearance.Options.UseFont = true;
-            this.BLOODPRESSURE.Location = new System.Drawing.Point(19, 399);
+            this.BLOODPRESSURE.Location = new System.Drawing.Point(20, 467);
             this.BLOODPRESSURE.Margin = new System.Windows.Forms.Padding(2);
             this.BLOODPRESSURE.Name = "BLOODPRESSURE";
-            this.BLOODPRESSURE.Size = new System.Drawing.Size(133, 19);
+            this.BLOODPRESSURE.Size = new System.Drawing.Size(140, 21);
             this.BLOODPRESSURE.TabIndex = 45;
             this.BLOODPRESSURE.Text = "Blood Pressure :";
             // 
@@ -165,10 +165,10 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(28, 439);
+            this.labelControl10.Location = new System.Drawing.Point(20, 518);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(124, 19);
+            this.labelControl10.Size = new System.Drawing.Size(130, 21);
             this.labelControl10.TabIndex = 46;
             this.labelControl10.Text = "O2 Saturation :";
             // 
@@ -176,10 +176,10 @@
             // 
             this.INITIALASSESSMENT.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.INITIALASSESSMENT.Appearance.Options.UseFont = true;
-            this.INITIALASSESSMENT.Location = new System.Drawing.Point(470, 54);
+            this.INITIALASSESSMENT.Location = new System.Drawing.Point(470, 119);
             this.INITIALASSESSMENT.Margin = new System.Windows.Forms.Padding(2);
             this.INITIALASSESSMENT.Name = "INITIALASSESSMENT";
-            this.INITIALASSESSMENT.Size = new System.Drawing.Size(145, 21);
+            this.INITIALASSESSMENT.Size = new System.Drawing.Size(152, 23);
             this.INITIALASSESSMENT.TabIndex = 47;
             this.INITIALASSESSMENT.Text = "Initial Assessment :";
             // 
@@ -187,10 +187,10 @@
             // 
             this.RECOMMENDATION.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RECOMMENDATION.Appearance.Options.UseFont = true;
-            this.RECOMMENDATION.Location = new System.Drawing.Point(470, 350);
+            this.RECOMMENDATION.Location = new System.Drawing.Point(438, 537);
             this.RECOMMENDATION.Margin = new System.Windows.Forms.Padding(2);
             this.RECOMMENDATION.Name = "RECOMMENDATION";
-            this.RECOMMENDATION.Size = new System.Drawing.Size(144, 21);
+            this.RECOMMENDATION.Size = new System.Drawing.Size(151, 23);
             this.RECOMMENDATION.TabIndex = 48;
             this.RECOMMENDATION.Text = "Recommendation :";
             // 
@@ -198,17 +198,17 @@
             // 
             this.ACTIONTAKEN.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ACTIONTAKEN.Appearance.Options.UseFont = true;
-            this.ACTIONTAKEN.Location = new System.Drawing.Point(470, 191);
+            this.ACTIONTAKEN.Location = new System.Drawing.Point(470, 314);
             this.ACTIONTAKEN.Margin = new System.Windows.Forms.Padding(2);
             this.ACTIONTAKEN.Name = "ACTIONTAKEN";
-            this.ACTIONTAKEN.Size = new System.Drawing.Size(108, 21);
+            this.ACTIONTAKEN.Size = new System.Drawing.Size(115, 23);
             this.ACTIONTAKEN.TabIndex = 49;
             this.ACTIONTAKEN.Text = "Action Taken :";
             // 
             // dateEdit1
             // 
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(145, 141);
+            this.dateEdit1.Location = new System.Drawing.Point(157, 116);
             this.dateEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -217,7 +217,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.ClassicNew;
             this.dateEdit1.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dateEdit1.Size = new System.Drawing.Size(200, 32);
+            this.dateEdit1.Size = new System.Drawing.Size(190, 34);
             this.dateEdit1.TabIndex = 50;
             // 
             // CHIEFCOMPLAIN
@@ -244,60 +244,60 @@
             0,
             0,
             0});
-            this.spinEdit1.Location = new System.Drawing.Point(162, 288);
+            this.spinEdit1.Location = new System.Drawing.Point(157, 303);
             this.spinEdit1.Name = "spinEdit1";
             this.spinEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spinEdit1.Size = new System.Drawing.Size(125, 32);
+            this.spinEdit1.Size = new System.Drawing.Size(125, 34);
             this.spinEdit1.TabIndex = 53;
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.AutoSize = true;
-            this.numericUpDown1.Location = new System.Drawing.Point(163, 329);
+            this.numericUpDown1.Location = new System.Drawing.Point(162, 362);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
             this.numericUpDown1.TabIndex = 54;
             // 
             // memoEdit1
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(470, 84);
+            this.memoEdit1.Location = new System.Drawing.Point(651, 110);
             this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(390, 77);
+            this.memoEdit1.Size = new System.Drawing.Size(390, 167);
             this.memoEdit1.TabIndex = 55;
             // 
             // memoEdit2
             // 
-            this.memoEdit2.Location = new System.Drawing.Point(470, 218);
+            this.memoEdit2.Location = new System.Drawing.Point(651, 318);
             this.memoEdit2.Name = "memoEdit2";
-            this.memoEdit2.Size = new System.Drawing.Size(390, 90);
+            this.memoEdit2.Size = new System.Drawing.Size(390, 170);
             this.memoEdit2.TabIndex = 56;
             // 
             // memoEdit3
             // 
-            this.memoEdit3.Location = new System.Drawing.Point(471, 376);
+            this.memoEdit3.Location = new System.Drawing.Point(651, 532);
             this.memoEdit3.Name = "memoEdit3";
-            this.memoEdit3.Size = new System.Drawing.Size(390, 90);
+            this.memoEdit3.Size = new System.Drawing.Size(390, 165);
             this.memoEdit3.TabIndex = 57;
             this.memoEdit3.EditValueChanged += new System.EventHandler(this.memoEdit3_EditValueChanged);
             // 
             // comboBoxEdit1
             // 
             this.comboBoxEdit1.EditValue = "";
-            this.comboBoxEdit1.Location = new System.Drawing.Point(889, 229);
+            this.comboBoxEdit1.Location = new System.Drawing.Point(839, 747);
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
             "jey marie",
             "gerline"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(190, 32);
+            this.comboBoxEdit1.Size = new System.Drawing.Size(190, 34);
             this.comboBoxEdit1.TabIndex = 60;
             // 
             // dateTimeOffsetEdit1
             // 
             this.dateTimeOffsetEdit1.EditValue = null;
-            this.dateTimeOffsetEdit1.Location = new System.Drawing.Point(145, 181);
+            this.dateTimeOffsetEdit1.Location = new System.Drawing.Point(157, 185);
             this.dateTimeOffsetEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeOffsetEdit1.Name = "dateTimeOffsetEdit1";
             this.dateTimeOffsetEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -305,13 +305,13 @@
             this.dateTimeOffsetEdit1.Properties.MaskSettings.Set("mask", "");
             this.dateTimeOffsetEdit1.Properties.SpinStyle = DevExpress.XtraEditors.Controls.SpinStyles.Horizontal;
             this.dateTimeOffsetEdit1.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.dateTimeOffsetEdit1.Size = new System.Drawing.Size(200, 32);
+            this.dateTimeOffsetEdit1.Size = new System.Drawing.Size(190, 34);
             this.dateTimeOffsetEdit1.TabIndex = 51;
             this.dateTimeOffsetEdit1.EditValueChanged += new System.EventHandler(this.dateTimeOffsetEdit1_EditValueChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(163, 360);
+            this.textBox1.Location = new System.Drawing.Point(189, 417);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 29);
@@ -319,7 +319,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(163, 399);
+            this.textBox2.Location = new System.Drawing.Point(189, 467);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(175, 29);
@@ -327,7 +327,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(163, 437);
+            this.textBox3.Location = new System.Drawing.Point(189, 519);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(175, 29);
@@ -337,45 +337,45 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(47, 66);
+            this.labelControl2.Location = new System.Drawing.Point(33, 66);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(90, 21);
+            this.labelControl2.Size = new System.Drawing.Size(97, 23);
             this.labelControl2.TabIndex = 66;
             this.labelControl2.Text = "First Name :";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(147, 64);
+            this.textBox4.Location = new System.Drawing.Point(147, 68);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 29);
+            this.textBox4.Size = new System.Drawing.Size(175, 29);
             this.textBox4.TabIndex = 67;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(41, 106);
+            this.labelControl1.Location = new System.Drawing.Point(357, 66);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(97, 19);
+            this.labelControl1.Size = new System.Drawing.Size(101, 21);
             this.labelControl1.TabIndex = 68;
             this.labelControl1.Text = "Last Name :";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(147, 103);
+            this.textBox5.Location = new System.Drawing.Point(480, 66);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 29);
+            this.textBox5.Size = new System.Drawing.Size(175, 29);
             this.textBox5.TabIndex = 69;
             // 
             // CCMA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 519);
+            this.ClientSize = new System.Drawing.Size(1091, 853);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.textBox4);

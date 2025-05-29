@@ -30,12 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DMCMEDICAL_Homepage));
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.HOME = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlSeparator3 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
+            this.accHomePage = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.PATIENTS = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.CC_MA = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.SuspendLayout();
@@ -44,46 +43,34 @@
             // 
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.HOME,
             this.accordionControlSeparator1,
+            this.accHomePage,
             this.PATIENTS,
-            this.CC_MA});
+            this.CC_MA,
+            this.accordionControlElement1});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(312, 633);
+            this.accordionControl1.Size = new System.Drawing.Size(311, 633);
             this.accordionControl1.TabIndex = 4;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.accordionControl1.Click += new System.EventHandler(this.accordionControl1_Click);
-            // 
-            // HOME
-            // 
-            this.HOME.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlSeparator2,
-            this.accordionControlSeparator3});
-            this.HOME.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("HOME.ImageOptions.Image")));
-            this.HOME.Name = "HOME";
-            this.HOME.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.HOME.Text = "Home";
-            this.HOME.Click += new System.EventHandler(this.HOME_Click);
-            // 
-            // accordionControlSeparator2
-            // 
-            this.accordionControlSeparator2.Name = "accordionControlSeparator2";
-            this.accordionControlSeparator2.Visible = false;
-            // 
-            // accordionControlSeparator3
-            // 
-            this.accordionControlSeparator3.Name = "accordionControlSeparator3";
-            this.accordionControlSeparator3.Visible = false;
             // 
             // accordionControlSeparator1
             // 
             this.accordionControlSeparator1.Name = "accordionControlSeparator1";
             // 
+            // accHomePage
+            // 
+            this.accHomePage.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accHomePage.ImageOptions.SvgImage")));
+            this.accHomePage.Name = "accHomePage";
+            this.accHomePage.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accHomePage.Text = "Home Page";
+            this.accHomePage.Click += new System.EventHandler(this.accHomePage_Click);
+            // 
             // PATIENTS
             // 
-            this.PATIENTS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("PATIENTS.ImageOptions.Image")));
+            this.PATIENTS.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("PATIENTS.ImageOptions.SvgImage")));
             this.PATIENTS.Name = "PATIENTS";
             this.PATIENTS.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.PATIENTS.Text = "Patients";
@@ -91,11 +78,18 @@
             // 
             // CC_MA
             // 
-            this.CC_MA.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CC_MA.ImageOptions.Image")));
+            this.CC_MA.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("CC_MA.ImageOptions.SvgImage")));
             this.CC_MA.Name = "CC_MA";
             this.CC_MA.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.CC_MA.Text = "Chief Clinic & Medical Assessment";
+            this.CC_MA.Text = "CCMA";
             this.CC_MA.Click += new System.EventHandler(this.CC_MA_Click);
+            // 
+            // accordionControlElement1
+            // 
+            this.accordionControlElement1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement1.ImageOptions.SvgImage")));
+            this.accordionControlElement1.Name = "accordionControlElement1";
+            this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement1.Text = "Total Patients";
             // 
             // simpleButton1
             // 
@@ -112,7 +106,7 @@
             this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1418, 633);
             this.Controls.Add(this.simpleButton1);
@@ -132,12 +126,11 @@
         #endregion
 
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement HOME;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement PATIENTS;
         private DevExpress.XtraBars.Navigation.AccordionControlElement CC_MA;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accHomePage;
     }
 }

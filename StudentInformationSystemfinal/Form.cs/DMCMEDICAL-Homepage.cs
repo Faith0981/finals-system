@@ -21,7 +21,7 @@ namespace StudentInformationSystemfinal.Form.cs
 
         private void HOME_Click(object sender, EventArgs e)
         {
-            DMCMEDICAL_Homepage2 homepagetwo = new DMCMEDICAL_Homepage2();
+            DMCMEDICAL homepagetwo = new DMCMEDICAL();
             homepagetwo.MdiParent = this;
             homepagetwo.Show();
         }
@@ -54,7 +54,7 @@ namespace StudentInformationSystemfinal.Form.cs
         private void DMCMEDICAL_Homepage_Load(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
-            DMCMEDICAL_Homepage2 homepagetwo = new DMCMEDICAL_Homepage2();
+            DMCMEDICAL homepagetwo = new DMCMEDICAL();
             homepagetwo.MdiParent = this;
             homepagetwo.Show();
         }
@@ -90,6 +90,13 @@ namespace StudentInformationSystemfinal.Form.cs
                 // Perform logout actions (e.g., closing forms, clearing session data)
                 this.Close(); // Closes the current form
             }
+        }
+
+        private void accHomePage_Click(object sender, EventArgs e)
+        {
+            DMCMEDICAL patient = new DMCMEDICAL();
+            patient.MdiParent = this;
+            patient.Show();
         }
     }
 }
