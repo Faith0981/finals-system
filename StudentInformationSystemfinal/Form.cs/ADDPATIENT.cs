@@ -12,6 +12,7 @@ using StudentInformationSystemfinal.Models;
 using Dapper;
 using System.Data.SQLite;
 using DevExpress.XtraBars.Ribbon.Drawing;
+using DevExpress.XtraCharts.Native;
 
 namespace StudentInformationSystemfinal.Form.cs
 {
@@ -79,7 +80,6 @@ namespace StudentInformationSystemfinal.Form.cs
                         KnownAllergies = knownAllergies,
                         Course = course,
                         ContactNumber = contactNumber
-
                     };
 
                     // Insert patient into the databaseI
