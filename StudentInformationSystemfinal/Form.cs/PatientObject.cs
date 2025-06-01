@@ -79,18 +79,11 @@ namespace StudentInformationSystemfinal.Form.cs
                     LoadData();
                 }
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 XtraMessageBox.Show(ex.Message);
             }
-           
-
         }
-     
-
-
-
-
-
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
            // _id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("PatientID"));
@@ -100,14 +93,10 @@ namespace StudentInformationSystemfinal.Form.cs
         {
            //useless code
         }
-
         private void searchControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
-      
-
         private void gridView1_ShowingEditor(object sender, CancelEventArgs e)
         {
             GridView view = sender as GridView;
@@ -116,16 +105,24 @@ namespace StudentInformationSystemfinal.Form.cs
                 e.Cancel = false;
             }
         }
-
         private void repositoryItemButtonEdit2_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-            if (e.Button.Caption == "DeleteButton") {
-                int id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Id"));
-                DialogResult result = XtraMessageBox.Show("Are you sure you want to delete this patient?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
+            if (e.Button.Caption == "DeleteButton")
+            {
+                // Ensure the correct row is focused
+                var view = gridControl1.FocusedView as GridView;
+                if (view != null)
                 {
-                    DeleteMethod(id);
-                    LoadData();
+                    int rowHandle = view.FocusedRowHandle;
+                    int id = Convert.ToInt32(view.GetRowCellValue(rowHandle, "Id"));
+                    DialogResult result = XtraMessageBox.Show("Are you sure you want to delete this patient?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        DeleteMethod(id);
+                        LoadData();
+                    }
+
+                    //this is a comment hehe
                 }
             }
         }

@@ -82,6 +82,7 @@ namespace StudentInformationSystemfinal.Form.cs
                         ContactNumber = contactNumber
                     };
 
+
                     // Insert patient into the databaseI
                     var insertQuery = @"INSERT INTO Patient(
                                 FirstName, 
