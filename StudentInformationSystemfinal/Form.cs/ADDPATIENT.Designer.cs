@@ -74,7 +74,7 @@
             this.teFirstName.Name = "teFirstName";
             this.teFirstName.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
             this.teFirstName.Properties.Appearance.Options.UseBorderColor = true;
-            this.teFirstName.Size = new System.Drawing.Size(278, 32);
+            this.teFirstName.Size = new System.Drawing.Size(278, 34);
             this.teFirstName.TabIndex = 2;
             this.teFirstName.EditValueChanged += new System.EventHandler(this.FIRSTNAMEBUTTON_EditValueChanged);
             // 
@@ -85,7 +85,7 @@
             this.teLastName.Name = "teLastName";
             this.teLastName.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
             this.teLastName.Properties.Appearance.Options.UseBorderColor = true;
-            this.teLastName.Size = new System.Drawing.Size(278, 32);
+            this.teLastName.Size = new System.Drawing.Size(278, 34);
             this.teLastName.TabIndex = 3;
             this.teLastName.EditValueChanged += new System.EventHandler(this.teLastName_EditValueChanged);
             // 
@@ -96,7 +96,7 @@
             this.teParent.Name = "teParent";
             this.teParent.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
             this.teParent.Properties.Appearance.Options.UseBorderColor = true;
-            this.teParent.Size = new System.Drawing.Size(272, 32);
+            this.teParent.Size = new System.Drawing.Size(272, 34);
             this.teParent.TabIndex = 4;
             this.teParent.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
             // 
@@ -107,7 +107,7 @@
             this.teAddress.Name = "teAddress";
             this.teAddress.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
             this.teAddress.Properties.Appearance.Options.UseBorderColor = true;
-            this.teAddress.Size = new System.Drawing.Size(280, 32);
+            this.teAddress.Size = new System.Drawing.Size(280, 34);
             this.teAddress.TabIndex = 5;
             this.teAddress.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
             // 
@@ -118,7 +118,7 @@
             this.FIRSTNAME.Location = new System.Drawing.Point(20, 56);
             this.FIRSTNAME.Margin = new System.Windows.Forms.Padding(2);
             this.FIRSTNAME.Name = "FIRSTNAME";
-            this.FIRSTNAME.Size = new System.Drawing.Size(90, 21);
+            this.FIRSTNAME.Size = new System.Drawing.Size(97, 23);
             this.FIRSTNAME.TabIndex = 11;
             this.FIRSTNAME.Text = "First Name :";
             // 
@@ -129,7 +129,7 @@
             this.teAge.Name = "teAge";
             this.teAge.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
             this.teAge.Properties.Appearance.Options.UseBorderColor = true;
-            this.teAge.Size = new System.Drawing.Size(103, 32);
+            this.teAge.Size = new System.Drawing.Size(103, 34);
             this.teAge.TabIndex = 25;
             // 
             // btnAddPatient
@@ -164,7 +164,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.deBirthdate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.deBirthdate.Size = new System.Drawing.Size(272, 32);
+            this.deBirthdate.Size = new System.Drawing.Size(272, 34);
             this.deBirthdate.TabIndex = 29;
             this.deBirthdate.EditValueChanged += new System.EventHandler(this.deBirthdate_EditValueChanged);
             // 
@@ -187,7 +187,7 @@
             this.cdeStatus.Properties.Items.AddRange(new object[] {
             "SEVER INJURED",
             "MINOR INJURED"});
-            this.cdeStatus.Size = new System.Drawing.Size(207, 32);
+            this.cdeStatus.Size = new System.Drawing.Size(207, 34);
             this.cdeStatus.TabIndex = 37;
             this.cdeStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit1_SelectedIndexChanged);
             // 
@@ -198,7 +198,7 @@
             this.cbe_Course.Name = "cbe_Course";
             this.cbe_Course.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbe_Course.Properties.DropDownRows = 2;
+            this.cbe_Course.Properties.DropDownRows = 12;
             this.cbe_Course.Properties.Items.AddRange(new object[] {
             "BACHELOR OF SCIENCE IN ACCOUNTANCY",
             "BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION",
@@ -212,7 +212,7 @@
             "BACHELOR OF SECONDARY EDUCATION",
             "BACHELOR OF ELEMENTARY EDUCATION",
             "BACHELOR OF SCIENCE IN RADIOLOGIC TECHNOLOGY"});
-            this.cbe_Course.Size = new System.Drawing.Size(157, 32);
+            this.cbe_Course.Size = new System.Drawing.Size(157, 34);
             this.cbe_Course.TabIndex = 38;
             this.cbe_Course.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit2_SelectedIndexChanged);
             // 
@@ -223,7 +223,7 @@
             this.labelControl3.Location = new System.Drawing.Point(282, 11);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(235, 25);
+            this.labelControl3.Size = new System.Drawing.Size(250, 28);
             this.labelControl3.TabIndex = 40;
             this.labelControl3.Text = "STUDENT INFORMATION :";
             // 
@@ -234,7 +234,7 @@
             this.labelControl4.Location = new System.Drawing.Point(21, 94);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(88, 21);
+            this.labelControl4.Size = new System.Drawing.Size(94, 23);
             this.labelControl4.TabIndex = 41;
             this.labelControl4.Text = "Last Name :";
             // 
@@ -245,7 +245,7 @@
             this.labelControl1.Location = new System.Drawing.Point(68, 128);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(38, 21);
+            this.labelControl1.Size = new System.Drawing.Size(42, 23);
             this.labelControl1.TabIndex = 42;
             this.labelControl1.Text = "Age :";
             // 
@@ -256,7 +256,7 @@
             this.labelControl5.Location = new System.Drawing.Point(403, 55);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(105, 21);
+            this.labelControl5.Size = new System.Drawing.Size(115, 23);
             this.labelControl5.TabIndex = 43;
             this.labelControl5.Text = "Date of Birth :";
             // 
@@ -267,7 +267,7 @@
             this.labelControl6.Location = new System.Drawing.Point(45, 165);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(60, 21);
+            this.labelControl6.Size = new System.Drawing.Size(64, 23);
             this.labelControl6.TabIndex = 44;
             this.labelControl6.Text = "Course :";
             // 
@@ -278,7 +278,7 @@
             this.labelControl2.Location = new System.Drawing.Point(319, 135);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(185, 21);
+            this.labelControl2.Size = new System.Drawing.Size(195, 23);
             this.labelControl2.TabIndex = 45;
             this.labelControl2.Text = "Perent/Guardian Name :";
             // 
@@ -289,7 +289,7 @@
             this.labelControl8.Location = new System.Drawing.Point(23, 298);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(220, 21);
+            this.labelControl8.Size = new System.Drawing.Size(234, 23);
             this.labelControl8.TabIndex = 47;
             this.labelControl8.Text = "Known Allergies/Symptoms :";
             // 
@@ -300,7 +300,7 @@
             this.labelControl9.Location = new System.Drawing.Point(187, 254);
             this.labelControl9.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(59, 21);
+            this.labelControl9.Size = new System.Drawing.Size(65, 23);
             this.labelControl9.TabIndex = 48;
             this.labelControl9.Text = "Status : ";
             this.labelControl9.Click += new System.EventHandler(this.labelControl9_Click);
@@ -312,7 +312,7 @@
             this.labelControl10.Location = new System.Drawing.Point(439, 94);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(68, 21);
+            this.labelControl10.Size = new System.Drawing.Size(74, 23);
             this.labelControl10.TabIndex = 49;
             this.labelControl10.Text = "Address :";
             // 
@@ -323,7 +323,7 @@
             this.labelControl11.Location = new System.Drawing.Point(371, 167);
             this.labelControl11.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(134, 21);
+            this.labelControl11.Size = new System.Drawing.Size(143, 23);
             this.labelControl11.TabIndex = 50;
             this.labelControl11.Text = "Contact Number :";
             // 
@@ -334,7 +334,7 @@
             this.teContactNumber.Name = "teContactNumber";
             this.teContactNumber.Properties.Appearance.BorderColor = System.Drawing.Color.SeaGreen;
             this.teContactNumber.Properties.Appearance.Options.UseBorderColor = true;
-            this.teContactNumber.Size = new System.Drawing.Size(224, 32);
+            this.teContactNumber.Size = new System.Drawing.Size(224, 34);
             this.teContactNumber.TabIndex = 51;
             this.teContactNumber.EditValueChanged += new System.EventHandler(this.teContactNumber_EditValueChanged);
             // 

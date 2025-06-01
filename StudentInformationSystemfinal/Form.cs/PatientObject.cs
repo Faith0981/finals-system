@@ -64,16 +64,25 @@ namespace StudentInformationSystemfinal.Form.cs
 
         private void DeleteMethod(int id) 
         {
-            using (var connection = new SQLiteConnection(_connectionString))
+            try
             {
-                var deleteQuery = @"DELETE FROM Patient WHERE PatientID = @PatientID";
-                var parameters = new DynamicParameters();
+                using (var connection = new SQLiteConnection(_connectionString))
                 {
-                    parameters.Add("PatientID", id);
-                };
-                connection.Execute(deleteQuery, parameters);
-                
+                    var deleteQuery = @"DELETE FROM Patient WHERE Id = @Id";
+                    var parameters = new DynamicParameters();
+                    {
+                        parameters.Add("Id", id);
+                    }
+                    ;
+                    connection.Execute(deleteQuery, parameters);
+                    XtraMessageBox.Show("Delete Successful!");
+                    LoadData();
+                }
             }
+            catch (Exception ex) {
+                XtraMessageBox.Show(ex.Message);
+            }
+           
 
         }
      
@@ -84,7 +93,7 @@ namespace StudentInformationSystemfinal.Form.cs
 
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-            _id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("PatientID"));
+           // _id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("PatientID"));
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -97,22 +106,7 @@ namespace StudentInformationSystemfinal.Form.cs
 
         }
 
-        private void repositoryItemButtonEdit3_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-            if (e.Button.Caption == "EditButton")
-            {
-
-            }
-            else if (e.Button.Caption == "DeleteButton") {
-                int id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("PatientID"));
-                DialogResult result = XtraMessageBox.Show("Are you sure you want to delete this patient?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
-                {
-                    DeleteMethod(id);
-                    LoadData();
-                }
-            }
-        }
+      
 
         private void gridView1_ShowingEditor(object sender, CancelEventArgs e)
         {
@@ -120,6 +114,19 @@ namespace StudentInformationSystemfinal.Form.cs
             if (view.FocusedColumn.FieldName == "Action")
             {
                 e.Cancel = false;
+            }
+        }
+
+        private void repositoryItemButtonEdit2_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            if (e.Button.Caption == "DeleteButton") {
+                int id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("Id"));
+                DialogResult result = XtraMessageBox.Show("Are you sure you want to delete this patient?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    DeleteMethod(id);
+                    LoadData();
+                }
             }
         }
     }
